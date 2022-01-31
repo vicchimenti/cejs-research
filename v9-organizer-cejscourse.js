@@ -144,7 +144,7 @@
 
          courseDescription: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="medialibrary,nav_sections" />'),
          fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
-         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
+         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
      };
  
  
@@ -158,9 +158,7 @@
       *  default html initializations
       * 
       * */
-     var summaryString = '<p class="card-text summary">' + contentDict.articleSummary.content + '</p>';
-     var dateString = '<p class="card-text publishDate"><em class="text-muted">Posted: ' + contentDict.publishDate.content + '</em></p>'; 
-     var beginningHTML = '<article class="suTodayWrapper announcement card border-0" id="sutoday' + contentDict.contentID.content + 'zonea" aria-label="' + contentDict.articleTitle.content + '">';
+     var beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + contentDict.contentId.content + 'zonea" aria-label="' + contentDict.articleTitle.content + '">';
      var endingHTML = '<hr class="articleBorderBottom"></article>';
      var titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
      var bodyString = '<span class="fullTextBody visually-hidden">No Main Body Content Provided</span>';
@@ -192,7 +190,6 @@
      if (contentDict.articleFullBody.content) {
  
          titleLink = '<h3 class="card-title border-0"><a href="' + contentDict.fullTextLink.content + '" class="card-link" title="Read the full announcement: ' + contentDict.articleTitle.content + '">' + contentDict.articleTitle.content + '</a></h3>';
-         bodyString = '<div class="fullTextBody">' + contentDict.articleFullBody.content + '</div>';
  
      } else {
  
@@ -228,14 +225,13 @@
       *  parse the list of topics tags, add <li> tags
       * 
       * */
-     if (contentDict.topics.content) {
+    //  if (contentDict.topics.content) {
  
-         let arrayOfTags = contentDict.topics.content.split(',');
-         let listItems = assignList(arrayOfTags);
+    //      let arrayOfTags = contentDict.topics.content.split(',');
+    //      let listItems = assignList(arrayOfTags);
  
-         // Print any tags that were selected
-         topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
-     }
+    //      topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
+    //  }
  
  
  
@@ -244,14 +240,13 @@
       *  parse the list of audience tags, add <li> tags
       * 
       * */
-     if (contentDict.audience.content) {
+    //  if (contentDict.audience.content) {
  
-         let audienceArray = contentDict.audience.content.split(',');
-         let audienceItems = assignList(audienceArray);
+    //      let audienceArray = contentDict.audience.content.split(',');
+    //      let audienceItems = assignList(audienceArray);
  
-         // Print any tags that were selected
-         audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
-     }
+    //      audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
+    //  }
  
  
  
@@ -260,9 +255,9 @@
       *  Parse for external link
       * 
       * */
-     var linkString =    contentDict.sectionLink.content
-                         ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
-                         : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
+    //  var linkString =    contentDict.sectionLink.content
+    //                      ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
+    //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
  
  
  
@@ -272,9 +267,9 @@
       *  Currently a hidden sort field
       * 
       * */
-     var prioityString = contentDict.priority.content
-                         ? '<span class="priority">' + contentDict.priority.content + '</span>'
-                         : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
+    //  var prioityString = contentDict.priority.content
+    //                      ? '<span class="priority">' + contentDict.priority.content + '</span>'
+    //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
  
  
  
@@ -296,18 +291,17 @@
              openRow,
              openBodyWrapper,
              titleLink,
-             openPublishDetails,
-             linkString,
-             dateString,
-             closePublishDetails,
-             summaryString,
+
+
+
              closeBodyWrapper,
+
+
              openSortFields,
-             topicList,
-             audienceList,
-             prioityString,
-             bodyString,
+
              closeSortFields,
+
+
              closeRow,
              endingHTML
          ]
