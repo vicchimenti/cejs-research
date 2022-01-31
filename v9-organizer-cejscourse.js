@@ -132,14 +132,7 @@
          iconId: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
 
 
-         articleSummary: getContentValues('<t4 type="content" name="Summary" output="normal" modifiers="striptags,htmlentities" />'),
-         publishDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
-         articleFullBody: getContentValues('<t4 type="content" name="Article Body" output="normal" display_field="value" />'),
-         audience: getContentValues('<t4 type="content" name="Audience" output="normal" display_field="value" />'),
-         topics: getContentValues('<t4 type="content" name="Topic" output="normal" display_field="value" />'),
-         priority: getContentValues('<t4 type="content" name="Priority" output="normal" display_field="value" />'),
-         sectionLink: getContentValues('<t4 type="content" name="Section Link 1" output="linkurl" modifiers="nav_sections" />'),
-         sectionLinkText: getContentValues('<t4 type="content" name="Section Link" output="linktext" modifiers="nav_sections" />'),
+
 
 
          courseDescription: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="medialibrary,nav_sections" />'),
