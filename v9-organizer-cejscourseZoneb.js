@@ -1,15 +1,15 @@
   /***
    *     @author Victor Chimenti, MSCS
-   *     @file v9-organizer-announcementZoneb.js
-   *     v9/organizer/announcementZoneb
-   *     id:5580
+   *     @file v9-organizer-cejscourseZoneb.js
+   *     v9/organizer/cejscourseZoneb
+   *     id:5650
    *
    *     This content type will work in conjunction with the Organizer and each item
    *     will contain one announcement summary in zoneB.
    *
    *     Document will write once when the page loads
    *
-   *     @version 7.21
+   *     @version 8.0
    */
 
 
