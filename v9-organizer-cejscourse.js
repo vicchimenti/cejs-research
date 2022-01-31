@@ -128,11 +128,12 @@
      var contentDict = {
          contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
          articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" display_field="value" />'),
+         articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
          iconId: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
+
 
          articleSummary: getContentValues('<t4 type="content" name="Summary" output="normal" modifiers="striptags,htmlentities" />'),
          publishDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
-         articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
          articleFullBody: getContentValues('<t4 type="content" name="Article Body" output="normal" display_field="value" />'),
          audience: getContentValues('<t4 type="content" name="Audience" output="normal" display_field="value" />'),
          topics: getContentValues('<t4 type="content" name="Topic" output="normal" display_field="value" />'),
