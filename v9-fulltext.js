@@ -6,7 +6,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.0
+ *     @version 7.1
  */
 
 
@@ -142,8 +142,8 @@
       *  including required content fields for fulltext
       * 
       * */
-     var bodyString = '<div class="fullTextBody">' + contentDict.articleFullBody.content + '</div>';
-     var dateString = '<p class="card-text publishDate"><em class="text-muted">Posted: ' + contentDict.publishDate.content + '</em></p>';
+    //  var bodyString = '<div class="fullTextBody">' + contentDict.articleFullBody.content + '</div>';
+    //  var dateString = '<p class="card-text publishDate"><em class="text-muted">Posted: ' + contentDict.publishDate.content + '</em></p>';
      var titleHeader = '<div class="card-header border-0"><h1 id="pageTitle">' + contentDict.articleTitle.content + '</h1></div>';
      var beginningHTML = '<div class="suTodayWrapper newsArticleWrapper announcementFullText contentItem card border-0" id="sutoday' + contentDict.contentId.content + 'fulltext" aria-labelledby="pageTitle" data-position-default="ZoneA" data-position-selected="ZoneA"><div class="article standardContent">';
      var endingHTML = '</div></div>';
@@ -174,9 +174,9 @@
       *  Parse for external link
       * 
       * */
-     var linkString =    (contentDict.sectionLink.content)
-                         ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
-                         : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
+    //  var linkString =    (contentDict.sectionLink.content)
+    //                      ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
+    //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
  
  
  
@@ -185,9 +185,9 @@
       *  Parse for author
       * 
       * */
-     var byLine =        (contentDict.articleAuthor.content)
-                         ? '<p class="card-text author"><strong>By: ' + contentDict.articleAuthor.content + '</strong></p>'
-                         : '<p class="card-text hidden visually-hidden"><strong class="author">No Author entered</strong></p>';
+    //  var byLine =        (contentDict.articleAuthor.content)
+    //                      ? '<p class="card-text author"><strong>By: ' + contentDict.articleAuthor.content + '</strong></p>'
+    //                      : '<p class="card-text hidden visually-hidden"><strong class="author">No Author entered</strong></p>';
      
  
  
@@ -196,9 +196,9 @@
       *  Parse for Priority
       * 
       * */
-     var prioityString = (contentDict.priority.content)
-                         ? '<span class="priority hidden visually-hidden">' + contentDict.priority.content + '</span>'
-                         : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
+    //  var prioityString = (contentDict.priority.content)
+    //                      ? '<span class="priority hidden visually-hidden">' + contentDict.priority.content + '</span>'
+    //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
  
  
  
@@ -219,16 +219,6 @@
          imageString =               (info.check())
                                      ? '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
                                      : '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + contentDict.articleTitle.content + '" loading="auto" />';
- 
-         
-         var captionString =         (contentDict.articleCaption.content)
-                                     ? '<figcaption class="figure-caption">' + contentDict.articleCaption.content + '</figcaption>'
-                                     : '<figcaption class="figure-caption hidden visually-hidden">No Caption Provided</figcaption>';
- 
-         
-         var photoCreditWrapper =    (contentDict.articlePhotoCredit.content)
-                                     ? '<span class="imageCredit"><em> - Image Credit: ' + contentDict.articlePhotoCredit.content + '</em></span>'
-                                     : '<span class="imageCredit hidden visually-hidden">No Photo Credit</span>';
      }
      
  
@@ -238,14 +228,13 @@
       *  parse the list of topics tags, add <li> tags
       * 
       * */
-     if (contentDict.topics.content) {
+    //  if (contentDict.topics.content) {
  
-         let arrayOfTags = contentDict.topics.content.split(',');
-         let listItems = assignList(arrayOfTags);
+    //      let arrayOfTags = contentDict.topics.content.split(',');
+    //      let listItems = assignList(arrayOfTags);
  
-         // Print any tags that were selected
-         topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
-     }
+    //      topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
+    //  }
  
  
  
@@ -254,14 +243,13 @@
       *  parse the list of audience tags, add <li> tags
       * 
       * */
-     if (contentDict.audience.content) {
+    //  if (contentDict.audience.content) {
  
-         let audienceArray = contentDict.audience.content.split(',');
-         let audienceItems = assignList(audienceArray);
+    //      let audienceArray = contentDict.audience.content.split(',');
+    //      let audienceItems = assignList(audienceArray);
  
-         // Print any tags that were selected
-         audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
-     }
+    //      audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
+    //  }
  
  
  
@@ -277,25 +265,26 @@
              titleHeader,
              openImageWrapper,
              imageString,
-             captionString,
-             photoCreditWrapper,
+
+
              closeImageWrapper,
              openRow,
              openBodyWrapper,
              openPublishDetails,
-             linkString,
-             dateString,
-             byLine,
+
+
              closePublishDetails,
-             bodyBorder,
-             bodyString,
+
+
+
              openSortFields,
-             prioityString,
+
              closeSortFields,
              closeBodyWrapper,
+
              openFooter,
-             topicList,
-             audienceList,
+
+
              closeFooter,
              bodyBorder,
              closeRow,
