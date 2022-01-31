@@ -1,15 +1,15 @@
     /***
      *     @author Victor Chimenti, MSCS
-     *     @file v9-organizer-announcement.js
-     *     v9/organizer/announcement
-     *     id:5580
+     *     @file v9-organizer-cejscourse.js
+     *     v9/organizer/cejscourse
+     *     id:5650
      *
      *     This content type will work in conjunction with the Organizer and each item
      *     will contain one announcement.
      *
      *     Document will write once when the page loads
      *
-     *     @version 6.47
+     *     @version 7.0
      */
 
 
@@ -128,6 +128,7 @@
      var contentDict = {
          contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
          articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" display_field="value" />'),
+
          articleSummary: getContentValues('<t4 type="content" name="Summary" output="normal" modifiers="striptags,htmlentities" />'),
          publishDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
          articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
@@ -137,6 +138,7 @@
          priority: getContentValues('<t4 type="content" name="Priority" output="normal" display_field="value" />'),
          sectionLink: getContentValues('<t4 type="content" name="Section Link 1" output="linkurl" modifiers="nav_sections" />'),
          sectionLinkText: getContentValues('<t4 type="content" name="Section Link" output="linktext" modifiers="nav_sections" />'),
+
          fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
          contentID: getContentValues('<t4 type="meta" meta="content_id" />')
      };
