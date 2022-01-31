@@ -2,6 +2,7 @@
      *     @author Victor Chimenti, MSCS
      *     @file v9-organizer-cejscourse.js
      *     v9/organizer/cejscourse
+     *     v9/organizer/cejscourse
      *     id:5650
      *
      *     This content type will work in conjunction with the Organizer and each item
@@ -9,7 +10,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.2
+     *     @version 7.3
      */
 
 
@@ -276,13 +277,7 @@
              openImageWrapper,
              imageString,
              closeImageWrapper,
-             openRow,
-             openBodyWrapper,
              titleLink,
-             closeBodyWrapper,
-             openSortFields,
-             closeSortFields,
-             closeRow,
              endingHTML
          ]
      );
