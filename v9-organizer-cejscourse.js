@@ -125,18 +125,13 @@
      /***
       *      Dictionary of content
       * */
-     var contentDict = {
+     var cejscDict = {
          contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-         articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" display_field="value" />'),
+         articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
          articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
          iconId: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
-
-
-
-
-
          courseDescription: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="medialibrary,nav_sections" />'),
-         fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
+         fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
          contentId: getContentValues('<t4 type="meta" meta="content_id" />')
      };
  
@@ -151,7 +146,7 @@
       *  default html initializations
       * 
       * */
-     var beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + contentDict.contentId.content + 'zonea" aria-label="' + contentDict.articleTitle.content + '">';
+     var beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
      var endingHTML = '<hr class="articleBorderBottom"></article>';
      var titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
      var bodyString = '<span class="fullTextBody visually-hidden">No Main Body Content Provided</span>';
@@ -180,13 +175,13 @@
       *  check for fulltext content
       * 
       * */
-     if (contentDict.articleFullBody.content) {
+     if (cejscDict.articleFullBody.content) {
  
-         titleLink = '<h3 class="card-title border-0"><a href="' + contentDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + contentDict.articleTitle.content + '">' + contentDict.articleTitle.content + '</a></h3>';
+         titleLink = '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>';
  
      } else {
  
-         titleLink = '<h3 class="card-title border-0">' + contentDict.articleTitle.content + '</h3>';
+         titleLink = '<h3 class="card-title border-0">' + cejscDict.articleTitle.content + '</h3>';
      }
  
  
@@ -196,7 +191,7 @@
       *  Parse for image
       * 
       * */
-     if (contentDict.articleImage.content) {
+     if (cejscDict.articleImage.content) {
  
          var imageID = content.get('Image').getID();
          var mediaInfo = getMediaInfo(imageID);
@@ -205,8 +200,8 @@
          info.setInput(media);
  
          imageString =   (info.check())
-                         ? '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
-                         : '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + contentDict.articleTitle.content + '" loading="auto" />';
+                         ? '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
+                         : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
    
          openImageWrapper = '<figure class="figure">';
      }
@@ -218,9 +213,9 @@
       *  parse the list of topics tags, add <li> tags
       * 
       * */
-    //  if (contentDict.topics.content) {
+    //  if (cejscDict.topics.content) {
  
-    //      let arrayOfTags = contentDict.topics.content.split(',');
+    //      let arrayOfTags = cejscDict.topics.content.split(',');
     //      let listItems = assignList(arrayOfTags);
  
     //      topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
@@ -233,9 +228,9 @@
       *  parse the list of audience tags, add <li> tags
       * 
       * */
-    //  if (contentDict.audience.content) {
+    //  if (cejscDict.audience.content) {
  
-    //      let audienceArray = contentDict.audience.content.split(',');
+    //      let audienceArray = cejscDict.audience.content.split(',');
     //      let audienceItems = assignList(audienceArray);
  
     //      audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
@@ -248,8 +243,8 @@
       *  Parse for external link
       * 
       * */
-    //  var linkString =    contentDict.sectionLink.content
-    //                      ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
+    //  var linkString =    cejscDict.sectionLink.content
+    //                      ? '<p class="card-text externalLink"><a href="' + cejscDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + cejscDict.sectionLinkText.content + '" target="_blank"><em>' + cejscDict.sectionLinkText.content + '</em></a></p>'
     //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
  
  
@@ -260,8 +255,8 @@
       *  Currently a hidden sort field
       * 
       * */
-    //  var prioityString = contentDict.priority.content
-    //                      ? '<span class="priority">' + contentDict.priority.content + '</span>'
+    //  var prioityString = cejscDict.priority.content
+    //                      ? '<span class="priority">' + cejscDict.priority.content + '</span>'
     //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
  
  
@@ -278,9 +273,11 @@
      writeDocument(
          [
              beginningHTML,
+
              openImageWrapper,
              imageString,
              closeImageWrapper,
+
              openRow,
              openBodyWrapper,
              titleLink,
