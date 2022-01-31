@@ -1,12 +1,12 @@
 /***
  *     @author Victor Chimenti, MSCS
  *     @file v9-fulltext.js
- *     @see v9/fulltext Campus Announcement
- *              ID: 5580
+ *     @see v9/fulltext CEJS Course
+ *              ID: 5650
  *
  *     Document will write client side once when the page loads
  *
- *     @version 6.40
+ *     @version 7.0
  */
 
 
