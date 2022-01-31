@@ -1,0 +1,18 @@
+/* Organizer adjustments */
+#zoneB .organizerWrapper {
+    padding-top: 1rem;
+}
+
+#zoneB .organizerWrapper h3 {
+    margin: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
+}
+
+/* Mobile layouts below 992 */
+
+@media screen and (max-width: 991.99px) {
+
+    #zoneA .announcementZoneb {
+        padding: 0 2rem;
+    }
+}
