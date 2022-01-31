@@ -119,22 +119,19 @@
       *      Dictionary of content
       * */
      var contentDict = {
-         contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-         articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" display_field="value" />'),
-         publishDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
-         articleAuthor: getContentValues('<t4 type="content" name="Author" output="normal" modifiers="striptags,htmlentities" />'),
-         articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
-         articleCaption: getContentValues('<t4 type="content" name="Caption" output="normal" modifiers="striptags,htmlentities" />'),
-         articlePhotoCredit: getContentValues('<t4 type="content" name="Photography By" output="normal" modifiers="striptags,htmlentities" />'),
-         articleFullBody: getContentValues('<t4 type="content" name="Article Body" output="normal" display_field="value" />'),
-         audience: getContentValues('<t4 type="content" name="Audience" output="normal" display_field="value" />'),
-         topics: getContentValues('<t4 type="content" name="Topic" output="normal" display_field="value" />'),
-         priority: getContentValues('<t4 type="content" name="Priority" output="normal" display_field="value" />'),
-         sectionLink: getContentValues('<t4 type="content" name="Section Link 1" output="linkurl" modifiers="nav_sections" />'),
-         sectionLinkText: getContentValues('<t4 type="content" name="Section Link" output="linktext" modifiers="nav_sections" />'),
-         fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
-         anchorTag: getContentValues('<t4 type="meta" meta="html_anchor" />'),
-         contentID: getContentValues('<t4 type="meta" meta="content_id" />')
+        contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
+        articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" display_field="value" />'),
+        articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
+        iconId: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
+
+
+
+
+
+        courseDescription: getContentValues('<t4 type="content" name="Description" output="normal" modifiers="medialibrary,nav_sections" />'),
+        fullTextLink: getContentValues('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
+        contentId: getContentValues('<t4 type="meta" meta="content_id" />'),
+        anchorTag: getContentValues('<t4 type="meta" meta="html_anchor" />')
      };
  
  
@@ -148,7 +145,7 @@
      var bodyString = '<div class="fullTextBody">' + contentDict.articleFullBody.content + '</div>';
      var dateString = '<p class="card-text publishDate"><em class="text-muted">Posted: ' + contentDict.publishDate.content + '</em></p>';
      var titleHeader = '<div class="card-header border-0"><h1 id="pageTitle">' + contentDict.articleTitle.content + '</h1></div>';
-     var beginningHTML = '<div class="suTodayWrapper newsArticleWrapper announcementFullText contentItem card border-0" id="sutoday' + contentDict.contentID.content + 'fulltext" aria-labelledby="pageTitle" data-position-default="ZoneA" data-position-selected="ZoneA"><div class="article standardContent">';
+     var beginningHTML = '<div class="suTodayWrapper newsArticleWrapper announcementFullText contentItem card border-0" id="sutoday' + contentDict.contentId.content + 'fulltext" aria-labelledby="pageTitle" data-position-default="ZoneA" data-position-selected="ZoneA"><div class="article standardContent">';
      var endingHTML = '</div></div>';
      var bodyBorder = '<hr class="articleBorderBottom">';
      var openRow = '<div class="row summaryWrapper">';
