@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.2
+ *     @version 7.3
  */
 
 
@@ -145,6 +145,8 @@
       * */
       let beginningHTML = '<article class="cejscourseItem standardContent card" id="cejscourse' + cejscDict.contentId.content + 'fulltext" aria-label="' + cejscDict.articleTitle.content + '">';
       let endingHTML = '</article>';
+      let openHeaderWrapper = '<div class="col-12 card-header">';
+      let closeHeaderWrapper = '</div>';
       let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
       let closeImageWrapper = '</div>';
       let openRow = '<div class="row g-0 noGap">';
@@ -244,6 +246,9 @@
       writeDocument(
         [
             beginningHTML,
+            openHeaderWrapper,
+            titleLink,
+            closeHeaderWrapper,
             openRow,
             openImageWrapper,
             openFig,
@@ -251,7 +256,6 @@
             closeFig,
             closeImageWrapper,
             openBodyWrapper,
-            titleLink,
             subjecString,
             primaryNameString,
             iconString,
