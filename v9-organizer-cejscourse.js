@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.9.2
+     *     @version 7.9.3
      */
 
 
@@ -163,6 +163,17 @@
 
 
     /***
+      *  check for primary section name
+      * 
+      * */
+      let primaryNameString =  (cejscDict.primarySectionName.content)
+                        ? '<p class="card-subtitle primarySectionName"><strong>Primary Section Name: </strong><em>' + cejscDict.primarySectionName.content + '</em></p>'
+                        : '<p class="card-text primarySectionName visually-hidden hidden">No valid primary section name provided</p>';
+
+
+
+
+    /***
       *  check for icon id
       * 
       * */
@@ -213,6 +224,7 @@
              closeImageWrapper,
              openBodyWrapper,
              titleLink,
+             primaryNameString,
              iconString,
              closeBodyWrapper,
              closeRow,
