@@ -129,7 +129,7 @@
       * 
       * */
      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
-     let endingHTML = '<hr class="articleBorderBottom"></article>';
+     let endingHTML = '</article>';
      let titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
      let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
      let closeImageWrapper = '</div>';
