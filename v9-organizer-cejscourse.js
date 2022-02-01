@@ -131,14 +131,13 @@
      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
      let endingHTML = '<hr class="articleBorderBottom"></article>';
      let titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
-     let bodyString = '<span class="fullTextBody visually-hidden">No Main Body Content Provided</span>';
-     let openRow = '<div class="row summaryWrapper">';
+     let openRow = '<div class="row g-0 noGap">';
      let closeRow = '</div>';
-     let openBodyWrapper = '<div class="articleSummary col-12 card-body border-0">';
+     let openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
      let closeBodyWrapper = '</div>';
      let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
-     let openImageWrapper = '<figure class="figure hidden visually-hidden">';
-     let closeImageWrapper = '</figure>';
+     let openFig = '<figure class="figure hidden visually-hidden">';
+     let closeFig = '</figure>';
      let openSortFields = '<div class="sortFields hidden visually-hidden">';
      let closeSortFields = '</div>';
      let topicList = '<div class="newsroomArticle tags topics hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
@@ -185,7 +184,7 @@
                          ? '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
                          : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
    
-         openImageWrapper = '<figure class="figure">';
+         openFig = '<figure class="figure">';
      } 
  
  
@@ -198,10 +197,18 @@
      writeDocument(
          [
              beginningHTML,
-             openImageWrapper,
+             openRow,
+
+             openFig,
              imageString,
-             closeImageWrapper,
+             closeFig,
+
+             openBodyWrapper,
+
+
              titleLink,
+             closeBodyWrapper,
+             closeRow,
              endingHTML
          ]
      );
