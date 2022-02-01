@@ -4,13 +4,13 @@
 */
 
 
-.cejscourseItem .card-header h1#pageTitle {
+#pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
     font-size: 3.8rem;
     font-weight: 500;
     hyphens: none;
-    padding: 0 0 1rem 0;
+    padding: 3rem 0 3rem 0;
     margin: 0;
 }
 
