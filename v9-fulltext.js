@@ -141,31 +141,19 @@
  
      /***
       *  default html initializations
-      *  including required content fields for fulltext
       * 
       * */
-    //  var bodyString = '<div class="fullTextBody">' + contentDict.articleFullBody.content + '</div>';
-    //  var dateString = '<p class="card-text publishDate"><em class="text-muted">Posted: ' + contentDict.publishDate.content + '</em></p>';
-     var titleHeader = '<div class="card-header border-0"><h1 id="pageTitle">' + contentDict.articleTitle.content + '</h1></div>';
-     var beginningHTML = '<div class="suTodayWrapper newsArticleWrapper announcementFullText contentItem card border-0" id="sutoday' + contentDict.contentId.content + 'fulltext" aria-labelledby="pageTitle" data-position-default="ZoneA" data-position-selected="ZoneA"><div class="article standardContent">';
-     var endingHTML = '</div></div>';
-     var bodyBorder = '<hr class="articleBorderBottom">';
-     var openRow = '<div class="row summaryWrapper">';
-     var closeRow = '</div>';
-     var openBodyWrapper = '<div class="articleSummary col-12 card-body border-0">';
-     var closeBodyWrapper = '</div>';
-     var imageString = '<img class="hidden visually-hidden" />';
-     var openSortFields = '<div class="sortFields hidden visually-hidden">';
-     var closeSortFields = '</div>';
-     var topicList = '<div class="newsroomArticle tags topics hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     var audienceList = '<div class="newsroomArticle tags audience hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     var openImageWrapper = '<figure class="figure hidden visually-hidden">';
-     var closeImageWrapper = '</figure>';
-     var openPublishDetails = '<div class="publishDetails">';
-     var closePublishDetails = '</div>';
-     var openFooter = '<div class="card-footer border-0 bg-transparent">';
-     var closeFooter = '</div>';
- 
+      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
+      let endingHTML = '</article>';
+      let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
+      let closeImageWrapper = '</div>';
+      let openRow = '<div class="row g-0 noGap">';
+      let closeRow = '</div>';
+      let openBodyWrapper = '<div class="articleSummary col-12 card-body">';
+      let closeBodyWrapper = '</div>';
+      let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
+      let openFig = '<figure class="figure hidden visually-hidden">';
+      let closeFig = '</figure>';
  
  
  
@@ -173,34 +161,47 @@
  
  
      /***
-      *  Parse for external link
+      *  check for fulltext content
       * 
       * */
-    //  var linkString =    (contentDict.sectionLink.content)
-    //                      ? '<p class="card-text externalLink"><a href="' + contentDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + contentDict.sectionLinkText.content + '" target="_blank"><em>' + contentDict.sectionLinkText.content + '</em></a></p>'
-    //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
- 
- 
- 
- 
-     /***
-      *  Parse for author
+      let titleLink =   (cejscDict.courseDescription.content)
+                        ? '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>'
+                        : '<h3 class="card-title border-0">' + cejscDict.articleTitle.content + '</h3>';
+
+
+
+
+    /***
+      *  check for subject Description
       * 
       * */
-    //  var byLine =        (contentDict.articleAuthor.content)
-    //                      ? '<p class="card-text author"><strong>By: ' + contentDict.articleAuthor.content + '</strong></p>'
-    //                      : '<p class="card-text hidden visually-hidden"><strong class="author">No Author entered</strong></p>';
-     
- 
- 
- 
-     /***
-      *  Parse for Priority
+      let subjecString =    (cejscDict.subjectDescription.content)
+                            ? '<p class="card-subtitle primarySectionName"><strong>Subject: </strong><em>' + cejscDict.subjectDescription.content + '</em></p>'
+                            : '<p class="card-text primarySectionName visually-hidden hidden">No valid primary section name provided</p>';
+
+
+
+
+    /***
+      *  check for primary section name
       * 
       * */
-    //  var prioityString = (contentDict.priority.content)
-    //                      ? '<span class="priority hidden visually-hidden">' + contentDict.priority.content + '</span>'
-    //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
+      let primaryNameString =   (cejscDict.primarySectionName.content)
+                                ? '<p class="card-text primarySectionName"><strong>Primary Section Name: </strong>' + cejscDict.primarySectionName.content + '</p>'
+                                : '<p class="card-text primarySectionName visually-hidden hidden">No valid primary section name provided</p>';
+
+
+
+
+
+    /***
+      *  check for icon id
+      * 
+      * */
+      let iconString =   (cejscDict.iconId.content)
+                        ? '<p class="card-text iconId"><strong>Media Library Image ID: </strong>' + cejscDict.iconId.content + '</p>'
+                        : '<p class="card-text iconId visually-hidden hidden">No valid icon provided</p>';
+ 
  
  
  
