@@ -138,12 +138,7 @@
      let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
      let openFig = '<figure class="figure hidden visually-hidden">';
      let closeFig = '</figure>';
-     let openSortFields = '<div class="sortFields hidden visually-hidden">';
-     let closeSortFields = '</div>';
-     let topicList = '<div class="newsroomArticle tags topics hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     let audienceList = '<div class="newsroomArticle tags audience hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     let openPublishDetails = '<div class="publishDetails">';
-     let closePublishDetails = '</div>';
+
  
  
  
