@@ -143,7 +143,7 @@
       *  default html initializations
       * 
       * */
-      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
+      let beginningHTML = '<article class="cejscourseItem card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
       let endingHTML = '</article>';
       let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
       let closeImageWrapper = '</div>';
@@ -165,8 +165,8 @@
       * 
       * */
       let titleLink =   (cejscDict.courseDescription.content)
-                        ? '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>'
-                        : '<h3 class="card-title border-0">' + cejscDict.articleTitle.content + '</h3>';
+                        ? '<h1 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h1>'
+                        : '<h1 class="card-title border-0">' + cejscDict.articleTitle.content + '</h1>';
 
 
 
