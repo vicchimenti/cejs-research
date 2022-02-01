@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.3
+ *     @version 7.4
  */
 
 
@@ -210,7 +210,7 @@
       *  Parse for image
       * 
       * */
-     if (contentDict.articleImage.content) {
+     if (cejscDict.articleImage.content) {
  
          openImageWrapper = '<figure class="figure">';
          var imageID = content.get('Image').getID();
@@ -220,8 +220,8 @@
          info.setInput(media);
  
          imageString =               (info.check())
-                                     ? '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
-                                     : '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + contentDict.articleTitle.content + '" loading="auto" />';
+                                     ? '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
+                                     : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
 
          openFig = '<figure class="figure">';
          openImageWrapper = '<div class="imageWrapper col-12 col-lg-4">';
