@@ -158,7 +158,7 @@
       *  check for fulltext content
       * 
       * */
-     if (cejscDict.articleFullBody.content) {
+     if (cejscDict.articleTitle.content) {
  
          titleLink = '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>';
  
