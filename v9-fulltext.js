@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.4.2
+ *     @version 7.4.3
  */
 
 
@@ -156,6 +156,9 @@
       let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
       let openFig = '<figure class="figure hidden visually-hidden">';
       let closeFig = '</figure>';
+      let openFooter = '<div class="card-footer border-0 bg-0 visually-hidden hidden d-none">';
+      let closeFooter = '</div>';
+      let descriptionString = '<p class="card-text courseDescription visually-hidden hidden">No valid description provided</p>';
  
  
  
@@ -229,7 +232,22 @@
          openImageWrapper = '<div class="cejscImageWrapper col-12 col-lg-4">';
          openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
      }
+
+
+
+
+    /***
+      *  check for description
+      * 
+      * */
+    if (cejscDict.courseDescription.content) {
+        descriptionString = cejscDict.courseDescription.content;
+        openFooter = '<div class="card-footer border-0 bg-0">';
+    }
+
      
+
+
  
  
  
@@ -261,6 +279,9 @@
             iconString,
             closeBodyWrapper,
             closeRow,
+            openFooter,
+            descriptionString,
+            closeFooter,
             endingHTML
         ]
     );
