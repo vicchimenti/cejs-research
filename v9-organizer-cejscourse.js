@@ -187,68 +187,11 @@
                          : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
    
          openImageWrapper = '<figure class="figure">';
-     }
+     } 
  
  
  
- 
-     /***
-      *  parse the list of topics tags, add <li> tags
-      * 
-      * */
-    //  if (cejscDict.topics.content) {
- 
-    //      let arrayOfTags = cejscDict.topics.content.split(',');
-    //      let listItems = assignList(arrayOfTags);
- 
-    //      topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
-    //  }
- 
- 
- 
- 
-     /***
-      *  parse the list of audience tags, add <li> tags
-      * 
-      * */
-    //  if (cejscDict.audience.content) {
- 
-    //      let audienceArray = cejscDict.audience.content.split(',');
-    //      let audienceItems = assignList(audienceArray);
- 
-    //      audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
-    //  }
- 
- 
- 
- 
-     /***
-      *  Parse for external link
-      * 
-      * */
-    //  let linkString =    cejscDict.sectionLink.content
-    //                      ? '<p class="card-text externalLink"><a href="' + cejscDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + cejscDict.sectionLinkText.content + '" target="_blank"><em>' + cejscDict.sectionLinkText.content + '</em></a></p>'
-    //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
- 
- 
- 
- 
-     /***
-      *  Parse for Priority
-      *  Currently a hidden sort field
-      * 
-      * */
-    //  let prioityString = cejscDict.priority.content
-    //                      ? '<span class="priority">' + cejscDict.priority.content + '</span>'
-    //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
- 
- 
- 
- 
- 
- 
- 
- 
+  
      /***
       *  write document once
       * 
