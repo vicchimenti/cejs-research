@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.6
+     *     @version 7.7
      */
 
 
@@ -36,7 +36,7 @@
       */
      function getContentValues(tag) {
          try {
-             let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag)
+             let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
              return {
                  isError: false,
                  content: _tag == '' ? null : _tag
