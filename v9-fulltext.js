@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.3
+ *     @version 7.4
  */
 
 
@@ -147,7 +147,7 @@
       let endingHTML = '</article>';
       let openHeaderWrapper = '<div class="col-12 card-header">';
       let closeHeaderWrapper = '</div>';
-      let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
+      let openImageWrapper = '<div class="cejscImageWrapper col-12 d-none visually-hidden hidden">';
       let closeImageWrapper = '</div>';
       let openRow = '<div class="row g-0 noGap">';
       let closeRow = '</div>';
@@ -222,11 +222,11 @@
          info.setInput(media);
  
          imageString =               (info.check())
-                                     ? '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
-                                     : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
+                                     ? '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
+                                     : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
 
          openFig = '<figure class="figure">';
-         openImageWrapper = '<div class="imageWrapper col-12 col-lg-4">';
+         openImageWrapper = '<div class="cejscImageWrapper col-12 col-lg-4">';
          openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
      }
      
