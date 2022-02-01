@@ -10,7 +10,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.4
+     *     @version 7.5
      */
 
 
@@ -24,7 +24,7 @@
      *      Import T4 Utilities
      */
      importClass(com.terminalfour.media.IMediaManager);
-     importClass(com.terminalfour.spring.ApplicationContextProvider);
+    //  importClass(com.terminalfour.spring.ApplicationContextProvider);
      importClass(com.terminalfour.publish.utils.BrokerUtils);
      importClass(com.terminalfour.media.utils.ImageInfo);
      
@@ -158,7 +158,7 @@
       *  check for fulltext content
       * 
       * */
-     if (cejscDict.articleTitle.content) {
+     if (cejscDict.courseDescription.content) {
  
          titleLink = '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>';
  
