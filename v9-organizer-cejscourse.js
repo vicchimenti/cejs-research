@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.7
+     *     @version 7.8
      */
 
 
@@ -182,6 +182,9 @@
                          : '<img src="' + cejscDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + cejscDict.articleTitle.content + '" loading="auto" />';
    
          openFig = '<figure class="figure">';
+         openImageWrapper = '<div class="imageWrapper col-12 col-lg-4">';
+         openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
+
      } 
  
  
@@ -202,7 +205,6 @@
              closeImageWrapper,
              openBodyWrapper,
              titleLink,
-             
              closeBodyWrapper,
              closeRow,
              endingHTML
