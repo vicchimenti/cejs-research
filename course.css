@@ -7,6 +7,11 @@
 */
  
 
+
+.organizerWrapper h2.organizerTitle {
+    margin-bottom: 3rem;
+}
+
 /* expand small images to fill available space on all browsers */
 .cejscourseWrapper img.articleImage {
     padding: 0;
