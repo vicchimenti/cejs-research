@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.4.1
+ *     @version 7.4.2
  */
 
 
@@ -166,9 +166,9 @@
       *  check for fulltext content
       * 
       * */
-      let titleLink =   (cejscDict.courseDescription.content)
-                        ? '<h1 id="pageTitle" class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h1>'
-                        : '<h1 id="pageTitle" class="card-title border-0">' + cejscDict.articleTitle.content + '</h1>';
+      let titleLink =   (cejscDict.articleTitle.content)
+                        ? '<h1 id="pageTitle" class="card-title">' + cejscDict.articleTitle.content + '</h1>'
+                        : '<h1 id="pageTitle" class="card-title">' + cejscDict.contentName.content + '</h1>';
 
 
 
