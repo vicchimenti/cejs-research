@@ -131,9 +131,11 @@
      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
      let endingHTML = '<hr class="articleBorderBottom"></article>';
      let titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
+     let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
+     let closeImageWrapper = '</div>';
      let openRow = '<div class="row g-0 noGap">';
      let closeRow = '</div>';
-     let openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
+     let openBodyWrapper = '<div class="articleSummary col-12 card-body">';
      let closeBodyWrapper = '</div>';
      let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
      let openFig = '<figure class="figure hidden visually-hidden">';
@@ -193,15 +195,14 @@
          [
              beginningHTML,
              openRow,
-
+             openImageWrapper,
              openFig,
              imageString,
              closeFig,
-
+             closeImageWrapper,
              openBodyWrapper,
-
-
              titleLink,
+             
              closeBodyWrapper,
              closeRow,
              endingHTML
