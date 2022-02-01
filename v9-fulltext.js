@@ -7,7 +7,7 @@
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.4
+ *     @version 7.2
  */
 
 
@@ -143,7 +143,7 @@
       *  default html initializations
       * 
       * */
-      let beginningHTML = '<article class="cejscourseItem card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
+      let beginningHTML = '<article class="cejscourseItem standardContent card border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'fulltext" aria-label="' + cejscDict.articleTitle.content + '">';
       let endingHTML = '</article>';
       let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
       let closeImageWrapper = '</div>';
