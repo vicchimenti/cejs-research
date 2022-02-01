@@ -10,7 +10,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.3
+     *     @version 7.4
      */
 
 
@@ -37,7 +37,7 @@
       */
      function getContentValues(tag) {
          try {
-             var _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag)
+             let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag)
              return {
                  isError: false,
                  content: _tag == '' ? null : _tag
@@ -58,8 +58,8 @@
       */
      function getMediaInfo(mediaID) {
      
-         var mediaManager = ApplicationContextProvider.getBean(IMediaManager);
-         var media = mediaManager.get(mediaID, language);
+         let mediaManager = ApplicationContextProvider.getBean(IMediaManager);
+         let media = mediaManager.get(mediaID, language);
      
          return media;
      }
@@ -72,8 +72,8 @@
       */
      function readMedia(mediaID) {
      
-         var mediaObj = getMediaInfo(mediaID);
-         var oMediaStream = mediaObj.getMedia();
+         let mediaObj = getMediaInfo(mediaID);
+         let oMediaStream = mediaObj.getMedia();
      
          return oMediaStream;
      }
@@ -126,7 +126,7 @@
      /***
       *      Dictionary of content
       * */
-     var cejscDict = {
+     let cejscDict = {
          contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
          articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
          articleImage: getContentValues('<t4 type="content" name="Image" output="normal" formatter="path/*" />'),
@@ -147,23 +147,23 @@
       *  default html initializations
       * 
       * */
-     var beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
-     var endingHTML = '<hr class="articleBorderBottom"></article>';
-     var titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
-     var bodyString = '<span class="fullTextBody visually-hidden">No Main Body Content Provided</span>';
-     var openRow = '<div class="row summaryWrapper">';
-     var closeRow = '</div>';
-     var openBodyWrapper = '<div class="articleSummary col-12 card-body border-0">';
-     var closeBodyWrapper = '</div>';
-     var imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
-     var openImageWrapper = '<figure class="figure hidden visually-hidden">';
-     var closeImageWrapper = '</figure>';
-     var openSortFields = '<div class="sortFields hidden visually-hidden">';
-     var closeSortFields = '</div>';
-     var topicList = '<div class="newsroomArticle tags topics hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     var audienceList = '<div class="newsroomArticle tags audience hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
-     var openPublishDetails = '<div class="publishDetails">';
-     var closePublishDetails = '</div>';
+     let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
+     let endingHTML = '<hr class="articleBorderBottom"></article>';
+     let titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
+     let bodyString = '<span class="fullTextBody visually-hidden">No Main Body Content Provided</span>';
+     let openRow = '<div class="row summaryWrapper">';
+     let closeRow = '</div>';
+     let openBodyWrapper = '<div class="articleSummary col-12 card-body border-0">';
+     let closeBodyWrapper = '</div>';
+     let imageString = '<span class="imageString hidden visually-hidden" />No Image Provided</span>';
+     let openImageWrapper = '<figure class="figure hidden visually-hidden">';
+     let closeImageWrapper = '</figure>';
+     let openSortFields = '<div class="sortFields hidden visually-hidden">';
+     let closeSortFields = '</div>';
+     let topicList = '<div class="newsroomArticle tags topics hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
+     let audienceList = '<div class="newsroomArticle tags audience hidden visually-hidden"><ul class="categories"><li class="tag">No Topic Provided</li></ul></div>';
+     let openPublishDetails = '<div class="publishDetails">';
+     let closePublishDetails = '</div>';
  
  
  
@@ -194,10 +194,10 @@
       * */
      if (cejscDict.articleImage.content) {
  
-         var imageID = content.get('Image').getID();
-         var mediaInfo = getMediaInfo(imageID);
-         var media = readMedia(imageID);
-         var info = new ImageInfo;
+         let imageID = content.get('Image').getID();
+         let mediaInfo = getMediaInfo(imageID);
+         let media = readMedia(imageID);
+         let info = new ImageInfo;
          info.setInput(media);
  
          imageString =   (info.check())
@@ -244,7 +244,7 @@
       *  Parse for external link
       * 
       * */
-    //  var linkString =    cejscDict.sectionLink.content
+    //  let linkString =    cejscDict.sectionLink.content
     //                      ? '<p class="card-text externalLink"><a href="' + cejscDict.sectionLink.content + '" class="card-link" title="For more information visit: ' + cejscDict.sectionLinkText.content + '" target="_blank"><em>' + cejscDict.sectionLinkText.content + '</em></a></p>'
     //                      : '<p class="card-text externalLink hidden visually-hidden">No Proper Link Provided</p>';
  
@@ -256,7 +256,7 @@
       *  Currently a hidden sort field
       * 
       * */
-    //  var prioityString = cejscDict.priority.content
+    //  let prioityString = cejscDict.priority.content
     //                      ? '<span class="priority">' + cejscDict.priority.content + '</span>'
     //                      : '<span class="priority hidden visually-hidden">No Priority Entered</span>';
  
