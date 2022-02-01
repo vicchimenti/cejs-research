@@ -130,7 +130,6 @@
       * */
      let beginningHTML = '<article class="cejscourseWrapper card shadow border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'zonea" aria-label="' + cejscDict.articleTitle.content + '">';
      let endingHTML = '</article>';
-     let titleLink = '<span class="card-title border-0 visually-hidden">No Valid Title Found</span>';
      let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
      let closeImageWrapper = '</div>';
      let openRow = '<div class="row g-0 noGap">';
@@ -153,6 +152,10 @@
       *  check for fulltext content
       * 
       * */
+      let titleLink = (cejscDict.courseDescription.content)
+                        ? '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>'
+                        : '<h3 class="card-title border-0">' + cejscDict.articleTitle.content + '</h3>';
+
      if (cejscDict.courseDescription.content) {
  
          titleLink = '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>';
