@@ -143,7 +143,7 @@
       *  default html initializations
       * 
       * */
-      let beginningHTML = '<article class="cejscourseItem standardContent card border-0 radius-0" id="cejscourse' + cejscDict.contentId.content + 'fulltext" aria-label="' + cejscDict.articleTitle.content + '">';
+      let beginningHTML = '<article class="cejscourseItem standardContent card" id="cejscourse' + cejscDict.contentId.content + 'fulltext" aria-label="' + cejscDict.articleTitle.content + '">';
       let endingHTML = '</article>';
       let openImageWrapper = '<div class="imageWrapper col-12 d-none visually-hidden hidden">';
       let closeImageWrapper = '</div>';
