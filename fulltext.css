@@ -14,6 +14,20 @@
     margin: 0;
 }
 
+
+.cejscourseItem .cejscImageWrapper {
+    padding: 0;
+}
+
+.cejscourseItem .cejscImageWrapper img.card-img {
+    padding: 0;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+}
+
 .announcementFullText img.card-img-top {
     padding: 1rem 0;
     width: 100%;
