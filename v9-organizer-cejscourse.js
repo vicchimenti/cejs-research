@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.9.1
+     *     @version 7.9.2
      */
 
 
@@ -152,9 +152,20 @@
       *  check for fulltext content
       * 
       * */
-      let titleLink = (cejscDict.courseDescription.content)
+      let titleLink =   (cejscDict.courseDescription.content)
                         ? '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>'
                         : '<h3 class="card-title border-0">' + cejscDict.articleTitle.content + '</h3>';
+
+
+
+
+    /***
+      *  check for icon id
+      * 
+      * */
+      let iconString =   (cejscDict.iconId.content)
+                        ? '<p class="card-text iconId"><strong>Media Library Image ID: </strong>' + cejscDict.iconId.content + '</p>'
+                        : '<p class="card-text iconId visually-hidden hidden">No valid icon provided</p>';
  
  
  
@@ -199,6 +210,7 @@
              closeImageWrapper,
              openBodyWrapper,
              titleLink,
+             iconString,
              closeBodyWrapper,
              closeRow,
              endingHTML
