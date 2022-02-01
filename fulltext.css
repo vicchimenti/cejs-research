@@ -1,0 +1,101 @@
+/***
+*       Custom Fulltext Styles for the Campus Announcement Content Type
+*       ID: 5580
+*/
+
+
+#pageContentWrapper .announcementFullText.newsArticleWrapper .card-header h1#pageTitle {
+    color: #AA0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 500;
+    hyphens: none;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+.announcementFullText img.card-img-top {
+    padding: 1rem 0;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+.row.summaryWrapper {
+    margin: 0;
+}
+
+.announcementFullText.newsArticleWrapper .externalLink a {
+    color: #088099;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.announcementFullText.newsArticleWrapper .externalLink a:hover {
+    text-decoration: underline;
+}
+
+.announcementFullText.newsArticleWrapper .externalLink a:focus {
+    text-decoration: underline;
+}
+
+.announcementFullText .articleSummary p {
+    font-weight: 500;
+}
+
+.announcementFullText div.newsroomArticle.tags {
+    display: inline-flex;
+    width: auto;
+}
+
+.announcementFullText ul.categories {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.announcementFullText ul.categories li {
+    background: none;
+    border: none;
+    color: #AA0000;
+    display: inline-block !important;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.5rem 2rem 0 0;
+}
+
+.announcementFullText .audience ul.categories li {
+    color: #55B31B;
+}
+
+.announcementFullText ul.categories li:before {
+    content: unset;
+}
+
+.announcementFullText hr.articleBorderBottom {
+    border-top: 3px solid #e5e5e5;
+    display: block;
+    height: 3px;
+}
+
+.announcementFullText .article figcaption.figure-caption {
+    color: #333333;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    hyphens: none;
+    line-height: 1.5;
+}
+
+.announcementFullText .article .imageCredit {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 400;
+    hyphens: none;
+    line-height: 1.5;
+}
+
+.announcementFullText .standardContent .card-body .fullTextBody p {
+    margin-bottom: 1.6rem;
+}
