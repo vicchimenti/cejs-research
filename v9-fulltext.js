@@ -222,37 +222,17 @@
          imageString =               (info.check())
                                      ? '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" />'
                                      : '<img src="' + contentDict.articleImage.content + '" class="articleImage figure-img card-img-top" alt="' + contentDict.articleTitle.content + '" loading="auto" />';
+
+         openFig = '<figure class="figure">';
+         openImageWrapper = '<div class="imageWrapper col-12 col-lg-4">';
+         openBodyWrapper = '<div class="articleSummary col-12 col-lg-8 card-body">';
      }
      
  
  
  
-     /***
-      *  parse the list of topics tags, add <li> tags
-      * 
-      * */
-    //  if (contentDict.topics.content) {
  
-    //      let arrayOfTags = contentDict.topics.content.split(',');
-    //      let listItems = assignList(arrayOfTags);
- 
-    //      topicList = '<div class="newsroomArticle tags topics"><ul class="categories">' + listItems + '</ul></div><br>';
-    //  }
- 
- 
- 
- 
-     /***
-      *  parse the list of audience tags, add <li> tags
-      * 
-      * */
-    //  if (contentDict.audience.content) {
- 
-    //      let audienceArray = contentDict.audience.content.split(',');
-    //      let audienceItems = assignList(audienceArray);
- 
-    //      audienceList = '<div class="newsroomArticle tags audience"><ul class="categories">' + audienceItems + '</ul></div>';
-    //  }
+
  
  
  
@@ -261,38 +241,26 @@
       *  write document once
       * 
       * */
-     writeDocument(
-         [
-             beginningHTML,
-             contentDict.anchorTag.content,
-             titleHeader,
-             openImageWrapper,
-             imageString,
+      writeDocument(
+        [
+            beginningHTML,
+            openRow,
+            openImageWrapper,
+            openFig,
+            imageString,
+            closeFig,
+            closeImageWrapper,
+            openBodyWrapper,
+            titleLink,
+            subjecString,
+            primaryNameString,
+            iconString,
+            closeBodyWrapper,
+            closeRow,
+            endingHTML
+        ]
+    );
 
-
-             closeImageWrapper,
-             openRow,
-             openBodyWrapper,
-             openPublishDetails,
-
-
-             closePublishDetails,
-
-
-
-             openSortFields,
-
-             closeSortFields,
-             closeBodyWrapper,
-
-             openFooter,
-
-
-             closeFooter,
-             bodyBorder,
-             closeRow,
-             endingHTML
-         ]);
  
  
  
