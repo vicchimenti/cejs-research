@@ -8,8 +8,8 @@
  
 
 /* expand small images to fill available space on all browsers */
-.cejscourseWrapper img.card-img-top {
-    padding: 2rem 2rem 0 2rem;
+.cejscourseWrapper img.articleImage {
+    padding: 0;
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -246,3 +246,13 @@
         width: unset;
     }
 }
+
+
+
+/***
+    ==========================================================================================
+    ===== CEJS Course === Campus cejscourseWrappers ===== Content Type: #5650 ================
+    ==========================================================================================
+    CEJS Course - Content Type requires Organizer
+
+*/
