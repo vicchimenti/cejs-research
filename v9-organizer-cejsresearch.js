@@ -1,15 +1,15 @@
     /***
      *     @author Victor Chimenti, MSCS
-     *     @file v9-organizer-cejscourse.js
-     *     v9/organizer/cejscourse
-     *     id:5650
+     *     @file v9-organizer-cejs-research.js
+     *     v9/organizer/cejs/research
+     *     id:5945
      *
      *     This content type will work in conjunction with the Organizer and each item
      *     will contain one announcement.
      *
      *     Document will write once when the page loads
      *
-     *     @version 7.9.4
+     *     @version 8.0
      */
 
 
