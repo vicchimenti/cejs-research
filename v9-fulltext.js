@@ -2,12 +2,12 @@
  *     @author Victor Chimenti, MSCS
  *     @file v9-fulltext.js
  *     @see CEJS Course
- *              ID: 5650
+ *              ID: 5945
  *              v9/fulltext
  *
  *     Document will write client side once when the page loads
  *
- *     @version 7.4.5
+ *     @version 8.0
  */
 
 
