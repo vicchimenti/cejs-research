@@ -2,5 +2,5 @@
 
 ## TODO
 
-- [] UDR layout names and content type ids to research
+- [x] UDR layout names and content type ids to research
 - [] create research content item
