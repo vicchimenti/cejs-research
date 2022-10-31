@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.2
+     *     @version 9.2.3
      */
 
 
@@ -280,6 +280,17 @@
 
 
         /***
+          *  check for citations
+          * 
+          * */
+         let citationString = (cejsrDict.citations.content) ?
+            '<span class="card-text citations">' + cejsrDict.citations.content + '</span>' :
+            '<span class="card-text citations visually-hidden hidden">No valid subject provided</span>';
+
+
+
+
+        /***
           *  check for subject college
           * 
           * */
@@ -416,6 +427,7 @@
                  openBodyWrapper,
                  collegeString,
                  descriptionString,
+                 citationString,
                  listOfLsapIcons,
                  listOfIcons,
                  closeBodyWrapper,
