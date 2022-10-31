@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.13
+     *     @version 9.2.14
      */
 
 
@@ -239,6 +239,8 @@
          let closeCardHeader = '</div>';
          let openBodyWrapper = '<div class="articleSummary card-body">';
          let closeBodyWrapper = '</div>';
+         let openDetails = '<div class="publishDetails">';
+         let closeDetails = '</div>';
          let listOfIcons = '<ul class="iconDashboard list-group list-group-horizontal hidden visually-hidden">No icons provided</ul>';
          let listOfLsapIcons = '<ul class="lsapIconDashboard list-group list-group-horizontal hidden visually-hidden">No icons provided</ul>';
 
@@ -280,6 +282,17 @@
 
 
         /***
+          *  check for fullname
+          * 
+          * */
+         let fullNameString = (cejsrDict.fullName.content) ?
+            '<p class="card-text fullName">' + cejsrDict.fullName.content + '</p>' :
+            '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
+
+
+
+
+        /***
           *  check for source date
           * 
           * */
@@ -312,13 +325,6 @@
 
 
 
-        /***
-          *  check for fullname
-          * 
-          * */
-         let fullNameString = (cejsrDict.fullName.content) ?
-         '<p class="card-text fullName">' + cejsrDict.fullName.content + '</p>' :
-         '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -437,12 +443,7 @@
          '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
  
  
- 
- 
 
- 
- 
- 
  
          /***
           *  define subtitle
@@ -523,8 +524,10 @@
                  openCardHeader,
                  titleLink,
                  subtitleString,
+                 openDetails,
                  linkString,
                  fullNameString,
+                 closeDetails,
                  closeCardHeader,
                  openBodyWrapper,
                  descriptionString,
