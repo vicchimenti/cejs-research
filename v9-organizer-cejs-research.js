@@ -1,8 +1,8 @@
     /***
      *     @author Victor Chimenti, MSCS
      *     @file v9-organizer-cejs-research.js
-     *     v9/organizer/cejs/research
-     *     id:5945
+     *          v9/organizer/cejs/research
+     *          id:5945
      *
      *     This content type will work in conjunction with the Organizer and each item
      *     will contain one announcement.
