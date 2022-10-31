@@ -360,9 +360,9 @@
           *  check for department
           * 
           * */
-         let departmentString = (cejsrDict.department.content) ?
-         '<p class="card-text department">' + cejsrDict.department.content + '</p>' :
-         '<p class="card-text department visually-hidden hidden">No valid subject provided</p>';
+        //  let departmentString = (cejsrDict.department.content) ?
+        //  '<p class="card-text department">' + cejsrDict.department.content + '</p>' :
+        //  '<p class="card-text department visually-hidden hidden">No valid subject provided</p>';
 
 
 
