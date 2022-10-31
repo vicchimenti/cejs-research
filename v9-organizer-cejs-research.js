@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.4
+     *     @version 9.2.5
      */
 
 
@@ -273,8 +273,8 @@
           * 
           * */
          let descriptionString = (cejsrDict.description.content) ?
-            '<span class="card-text description">' + cejsrDict.description.content + '</span>' :
-            '<span class="card-text description visually-hidden hidden">No valid subject provided</span>';
+            '<p class="card-text description">' + cejsrDict.description.content + '</p>' :
+            '<p class="card-text description visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -284,8 +284,8 @@
           * 
           * */
          let citationString = (cejsrDict.citations.content) ?
-            '<span class="card-text citations">' + cejsrDict.citations.content + '</span>' :
-            '<span class="card-text citations visually-hidden hidden">No valid subject provided</span>';
+            '<p class="card-text citations">' + cejsrDict.citations.content + '</p>' :
+            '<p class="card-text citations visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -295,8 +295,8 @@
           * 
           * */
          let fullNameString = (cejsrDict.fullName.content) ?
-         '<span class="card-text fullName">' + cejsrDict.fullName.content + '</span>' :
-         '<span class="card-text fullName visually-hidden hidden">No valid subject provided</span>';
+         '<p class="card-text fullName">' + cejsrDict.fullName.content + '</p>' :
+         '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -306,8 +306,8 @@
           * 
           * */
          let firstNameString = (cejsrDict.firstName.content) ?
-            '<span class="card-text firstName">' + cejsrDict.firstName.content + '</span>' :
-            '<span class="card-text firstName visually-hidden hidden">No valid subject provided</span>';
+            '<p class="card-text firstName">' + cejsrDict.firstName.content + '</p>' :
+            '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -317,8 +317,8 @@
           * 
           * */
          let lastNameString = (cejsrDict.lastName.content) ?
-            '<span class="card-text firstName">' + cejsrDict.lastName.content + '</span>' :
-            '<span class="card-text firstName visually-hidden hidden">No valid subject provided</span>';
+            '<p class="card-text firstName">' + cejsrDict.lastName.content + '</p>' :
+            '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -328,8 +328,8 @@
           * 
           * */
          let collegeString = (cejsrDict.college.content) ?
-            '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
-            '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+            '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
+            '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
           
  
  
