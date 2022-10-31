@@ -225,7 +225,6 @@
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
 
-             summaryDescription: getContentValues('<t4 type="content" name="Plaintext Description" output="normal" modifiers="striptags,htmlentities" />'),
              fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
              contentId: getContentValues('<t4 type="meta" meta="content_id" />')
  
@@ -301,9 +300,9 @@
           *  format summary
           * 
           * */
-         let summaryString =    (summarySubstring && cejsrDict.articleTitle.content) ?
-                                '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejsrDict.articleTitle.content + '">Read More</a></span></p>' :
-                                '<span class="card-text shortSummary visually-hidden hidden">No valid summary provided</span>';
+        //  let summaryString =    (summarySubstring && cejsrDict.articleTitle.content) ?
+        //                         '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejsrDict.articleTitle.content + '">Read More</a></span></p>' :
+        //                         '<span class="card-text shortSummary visually-hidden hidden">No valid summary provided</span>';
 
  
  
