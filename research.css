@@ -88,6 +88,22 @@
     text-decoration: underline;
 }
 
+.cejsResearchWrapper .typeDetails {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.cejsResearchWrapper .typeDetails p.researchFormat {
+    font-weight: 600;
+}
+
+.cejsResearchWrapper .typeDetails p.description {
+    margin: 0;
+}
+
 
 
 
