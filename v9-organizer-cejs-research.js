@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.1
+     *     @version 9.2.2
      */
 
 
@@ -415,6 +415,7 @@
                  closeCardHeader,
                  openBodyWrapper,
                  collegeString,
+                 descriptionString,
                  listOfLsapIcons,
                  listOfIcons,
                  closeBodyWrapper,
