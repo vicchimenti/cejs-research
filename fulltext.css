@@ -10,9 +10,9 @@
 }
 
 .cejsResearchItem.card {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     border: none;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important; */
     margin: 1rem;
     padding: 1rem;
 }
