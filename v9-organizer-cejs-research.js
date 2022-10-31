@@ -218,7 +218,6 @@
 
              academicLevel: getContentValues('<t4 type="content" name="Section Academic Level" output="normal" modifiers="striptags,htmlentities" />'),
              primarySectionName: getContentValues('<t4 type="content" name="Primary Section Name" output="normal" modifiers="striptags,htmlentities" />'),
-             subjectDescription: getContentValues('<t4 type="content" name="Subject" output="normal" modifiers="striptags,htmlentities" />'),
              icons: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="LSAP ID" output="normal" modifiers="striptags,htmlentities" />'),             
              summaryDescription: getContentValues('<t4 type="content" name="Plaintext Description" output="normal" modifiers="striptags,htmlentities" />'),
@@ -308,9 +307,9 @@
           *  check for subject Description
           * 
           * */
-         let subjectString = (cejsrDict.subjectDescription.content) ?
-             '<span class="card-text subject"><em>' + cejsrDict.subjectDescription.content + '</em></span>' :
-             '<span class="card-text subject visually-hidden hidden">No valid subject provided</span>';
+        //  let subjectString = (cejsrDict.subjectDescription.content) ?
+        //      '<span class="card-text subject"><em>' + cejsrDict.subjectDescription.content + '</em></span>' :
+        //      '<span class="card-text subject visually-hidden hidden">No valid subject provided</span>';
  
  
  
