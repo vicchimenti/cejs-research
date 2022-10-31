@@ -251,8 +251,8 @@
           * 
           * */
          let beginningHTML =    (cejsrDict.articleTitle.content) ?
-                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsResearch' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
-                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsResearch' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
+                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
+                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
 
 
