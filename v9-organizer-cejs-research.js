@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.17
+     *     @version 9.2.18
      */
 
 
@@ -310,7 +310,7 @@
           * 
           * */
          let descriptionString = (cejsrDict.description.content) ?
-            '<p class="card-text description">' + cejsrDict.description.content + '</p>' :
+            '<p class="card-text description"><em>' + cejsrDict.description.content + '</em></p>' :
             '<p class="card-text description visually-hidden hidden">No valid subject provided</p>';
 
 
