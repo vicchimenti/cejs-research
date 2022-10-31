@@ -391,8 +391,8 @@
           * 
           * */
          let typeString = (cejsrDict.researchType.content) ?
-            '<p class="card-text researchType">' + cejsrDict.researchType.content + '</p>' :
-            '<p class="card-text researchType visually-hidden hidden">No valid subject provided</p>';
+            '<span class="card-text researchType">' + cejsrDict.researchType.content + '</span>' :
+            '<span class="card-text researchType visually-hidden hidden">No valid subject provided</span>';
           
  
  
