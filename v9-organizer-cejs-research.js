@@ -254,13 +254,7 @@
 
 
 
-        /***
-          *  include section id
-          * 
-          * */
-         let sectionIdString =  (cejsrDict.sectionId.content) ?
-                                '<span class="sectionId hidden visually-hidden">' + cejsrDict.sectionId.content + '</span>' :
-                                '<span class="sectionId hidden visually-hidden">No valid Section ID provided</span>';
+
  
   
 
@@ -422,7 +416,6 @@
                  summaryString,
                  listOfLsapIcons,
                  listOfIcons,
-                 sectionIdString,
                  closeBodyWrapper,
                  endingHTML
              ]
