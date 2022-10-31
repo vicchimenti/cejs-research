@@ -280,12 +280,12 @@
 
 
         /***
-          *  check for url
+          *  check for source date
           * 
           * */
-         let dateString = (cejsrDict.sourceDate.content) ?
-            '<p class="card-text sourceDate">' + cejsrDict.sourceDate.content + '</p>' :
-            '<p class="card-text sourceDate visually-hidden hidden">No valid subject provided</p>';
+        //  let dateString = (cejsrDict.sourceDate.content) ?
+        //     '<p class="card-text sourceDate">' + cejsrDict.sourceDate.content + '</p>' :
+        //     '<p class="card-text sourceDate visually-hidden hidden">No valid subject provided</p>';
 
 
 
