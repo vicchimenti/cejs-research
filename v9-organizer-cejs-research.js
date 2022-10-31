@@ -209,6 +209,7 @@
              contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
              articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
              description: getContentValues('<t4 type="content" name="Research Description" output="normal" modifiers="striptags,htmlentities" />'),
+             citations: getContentValues('<t4 type="content" name="Citations" output="normal" modifiers="striptags,htmlentities" />'),
 
 
              college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
