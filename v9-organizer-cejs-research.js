@@ -272,6 +272,16 @@
           *  check for description
           * 
           * */
+         let linkString = (cejsrDict.journalLink.content && cejsrDict.publisher.content) ?
+            '<p class="card-text journalLink"><a href="' + cejsrDict.journalLink.content + '" title="Visit the publisher: ' + cejsrDict.publisher.content + '" target="_blank">' + cejsrDict.publisher.content + '<a></p>' :
+            '<p class="card-text journalLink visually-hidden hidden">No valid subject provided</p>';
+
+
+
+        /***
+          *  check for description
+          * 
+          * */
          let descriptionString = (cejsrDict.description.content) ?
             '<p class="card-text description">' + cejsrDict.description.content + '</p>' :
             '<p class="card-text description visually-hidden hidden">No valid subject provided</p>';
@@ -480,6 +490,7 @@
                  titleLink,
                  closeCardHeader,
                  openBodyWrapper,
+                 linkString,
                  collegeString,
                  descriptionString,
                  citationString,
