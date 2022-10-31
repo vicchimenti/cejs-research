@@ -204,7 +204,7 @@
          /***
           *      Dictionary of content
           * */
-         let cejscDict = {
+         let cejsrDict = {
  
              contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
              sectionId: getContentValues('<t4 type="content" name="Section ID" output="normal" modifiers="striptags,htmlentities" />'),
@@ -245,11 +245,11 @@
           *  define wrapper
           * 
           * */
-         let beginningHTML =    (cejscDict.articleTitle.content) ?
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejscDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejscDict.articleTitle.content + '">' :
-                                (cejscDict.primarySectionName.content) ?
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejscDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejscDict.primarySectionName.content + '">' :
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejscDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejscDict.contentName.content + '">';
+         let beginningHTML =    (cejsrDict.articleTitle.content) ?
+                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
+                                (cejsrDict.primarySectionName.content) ?
+                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.primarySectionName.content + '">' :
+                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
 
 
@@ -258,8 +258,8 @@
           *  include section id
           * 
           * */
-         let sectionIdString =  (cejscDict.sectionId.content) ?
-                                '<span class="sectionId hidden visually-hidden">' + cejscDict.sectionId.content + '</span>' :
+         let sectionIdString =  (cejsrDict.sectionId.content) ?
+                                '<span class="sectionId hidden visually-hidden">' + cejsrDict.sectionId.content + '</span>' :
                                 '<span class="sectionId hidden visually-hidden">No valid Section ID provided</span>';
  
   
@@ -268,11 +268,11 @@
           *  check for fulltext content
           * 
           * */
-         let titleLink = (cejscDict.articleTitle.content && cejscDict.courseName.content) ?
-             '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.courseName.content + ' : ' + cejscDict.articleTitle.content + '</a></h3>' :
-             (cejscDict.articleTitle.content && !cejscDict.courseName.content) ?
-             '<h3 class="card-title border-0"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejscDict.articleTitle.content + '">' + cejscDict.articleTitle.content + '</a></h3>' :
-             '<h3 class="card-title border-0">' + cejscDict.contentName.content + '</h3>';
+         let titleLink = (cejsrDict.articleTitle.content && cejsrDict.courseName.content) ?
+             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.courseName.content + ' : ' + cejsrDict.articleTitle.content + '</a></h3>' :
+             (cejsrDict.articleTitle.content && !cejsrDict.courseName.content) ?
+             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
+             '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
  
  
  
@@ -283,7 +283,7 @@
           * 
           * */
          let maxLength = 200;
-         let plainString = (cejscDict.summaryDescription.content) ? '' + cejscDict.summaryDescription.content +  '' : null;
+         let plainString = (cejsrDict.summaryDescription.content) ? '' + cejsrDict.summaryDescription.content +  '' : null;
          let actualLength = (plainString) ? plainString.length : null;
          let summarySubstring = (plainString && actualLength && actualLength > maxLength) ?
                                 plainString.substring(0, maxLength) :
@@ -298,8 +298,8 @@
           *  format summary
           * 
           * */
-         let summaryString =    (summarySubstring && cejscDict.articleTitle.content) ?
-                                '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejscDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejscDict.articleTitle.content + '">Read More</a></span></p>' :
+         let summaryString =    (summarySubstring && cejsrDict.articleTitle.content) ?
+                                '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejsrDict.articleTitle.content + '">Read More</a></span></p>' :
                                 '<span class="card-text shortSummary visually-hidden hidden">No valid summary provided</span>';
 
  
@@ -309,8 +309,8 @@
           *  check for subject Description
           * 
           * */
-         let subjectString = (cejscDict.subjectDescription.content) ?
-             '<span class="card-text subject"><em>' + cejscDict.subjectDescription.content + '</em></span>' :
+         let subjectString = (cejsrDict.subjectDescription.content) ?
+             '<span class="card-text subject"><em>' + cejsrDict.subjectDescription.content + '</em></span>' :
              '<span class="card-text subject visually-hidden hidden">No valid subject provided</span>';
  
  
@@ -320,8 +320,8 @@
           *  check for subject college
           * 
           * */
-         let collegeString = (cejscDict.college.content) ?
-             '<span class="card-text college">' + cejscDict.college.content + '</span>' :
+         let collegeString = (cejsrDict.college.content) ?
+             '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
              '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
  
  
@@ -331,8 +331,8 @@
           *  check for subject level
           * 
           * */
-         let academicLevelString = (cejscDict.academicLevel.content) ?
-             '<span class="card-text academicLevel">' + cejscDict.academicLevel.content + '</span>' :
+         let academicLevelString = (cejsrDict.academicLevel.content) ?
+             '<span class="card-text academicLevel">' + cejsrDict.academicLevel.content + '</span>' :
              '<span class="card-text academicLevel visually-hidden hidden">No valid subject provided</span>';
  
  
@@ -342,19 +342,19 @@
           *  define subtitle
           * 
           * */
-         let subtitleString = (cejscDict.subjectDescription.content && cejscDict.college.content && cejscDict.academicLevel.content) ?
+         let subtitleString = (cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + ' | ' + academicLevelString + '</p>' :
-             (cejscDict.subjectDescription.content && cejscDict.college.content && !cejscDict.academicLevel.content) ?
+             (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + '</p>' :
-             (cejscDict.subjectDescription.content && !cejscDict.college.content && cejscDict.academicLevel.content) ?
+             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + subjectString + ' | ' + academicLevelString + '</p>' :
-             (!cejscDict.subjectDescription.content && cejscDict.college.content && cejscDict.academicLevel.content) ?
+             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + collegeString + ' | ' + academicLevelString + '</p>' :
-             (!cejscDict.subjectDescription.content && !cejscDict.college.content && cejscDict.academicLevel.content) ?
+             (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + academicLevelString + '</p>' :
-             (!cejscDict.subjectDescription.content && cejscDict.college.content && !cejscDict.academicLevel.content) ?
+             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + collegeString + '</p>' :
-             (cejscDict.subjectDescription.content && !cejscDict.college.content && !cejscDict.academicLevel.content) ?
+             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
              '<p class="card-subtitle">' + subjectString + '</p>' :
              '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
  
@@ -365,9 +365,9 @@
           *  Parse and format sdg icons
           * 
           * */
-         if (cejscDict.icons.content) {
+         if (cejsrDict.icons.content) {
  
-             let iconArray = cejscDict.icons.content.split(',');
+             let iconArray = cejsrDict.icons.content.split(',');
              let iconPathArray = [];
 
              iconArray.sort();
@@ -388,9 +388,9 @@
           *  Parse and format lsap icons
           * 
           * */
-        if (cejscDict.lsapIcons.content) {
+        if (cejsrDict.lsapIcons.content) {
 
-            let iconArray = cejscDict.lsapIcons.content.split(',');
+            let iconArray = cejsrDict.lsapIcons.content.split(',');
             let iconPathArray = [];
 
             iconArray.sort();
