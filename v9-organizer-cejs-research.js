@@ -272,19 +272,7 @@
  
  
 
-         /***
-          *  check for summaryDescription
-          *  find string length and truncate
-          * 
-          * */
-        //  let maxLength = 200;
-        //  let plainString = (cejsrDict.summaryDescription.content) ? '' + cejsrDict.summaryDescription.content +  '' : null;
-        //  let actualLength = (plainString) ? plainString.length : null;
-        //  let summarySubstring = (plainString && actualLength && actualLength > maxLength) ?
-        //                         plainString.substring(0, maxLength) :
-        //                         (plainString && actualLength && actualLength <= maxLength) ?
-        //                         plainString.substring(0, actualLength) :
-        //                         null;
+
                                 
                                 
 
