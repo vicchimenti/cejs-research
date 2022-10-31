@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.19
+     *     @version 9.2.20
      */
 
 
@@ -391,7 +391,7 @@
           * 
           * */
          let typeString = (cejsrDict.researchType.content) ?
-            '<span class="card-text researchType">' + cejsrDict.researchType.content + '</span>' :
+            '<span class="card-text text-muted researchType">' + cejsrDict.researchType.content + '</span>' :
             '<span class="card-text researchType visually-hidden hidden">No valid subject provided</span>';
           
  
