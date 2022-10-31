@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.15
+     *     @version 9.2.16
      */
 
 
@@ -532,8 +532,6 @@
                  openBodyWrapper,
                  descriptionString,
                  citationString,
-                 firstNameString,
-                 lastNameString,
                  formatString,
                  typeString,
                  listOfLsapIcons,
