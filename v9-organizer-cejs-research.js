@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.14
+     *     @version 9.2.15
      */
 
 
@@ -275,7 +275,7 @@
           * 
           * */
          let linkString = (cejsrDict.journalLink.content && cejsrDict.publisher.content) ?
-            '<p class="card-text journalLink"><a href="' + cejsrDict.journalLink.content + '" class="card-link" title="Visit the publisher: ' + cejsrDict.publisher.content + '" target="_blank">' + cejsrDict.publisher.content + '</a></p>' :
+            '<p class="card-text journalLink"><a href="' + cejsrDict.journalLink.content + '" class="card-link" title="Visit the publisher: ' + cejsrDict.publisher.content + '" target="_blank"><em>' + cejsrDict.publisher.content + '</em></a></p>' :
             '<p class="card-text journalLink visually-hidden hidden">No valid subject provided</p>';
 
 
