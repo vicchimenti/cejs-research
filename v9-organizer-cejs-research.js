@@ -265,11 +265,9 @@
           *  check for fulltext content
           * 
           * */
-         let titleLink = (cejsrDict.articleTitle.content) ?
-            //  '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.courseName.content + ' : ' + cejsrDict.articleTitle.content + '</a></h3>' :
-            //  (cejsrDict.articleTitle.content && !cejsrDict.courseName.content) ?
-            //  '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
-            //  '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
+         let titleLink = (cejsrDict.articleTitle.content && cejsrDict.fullTextLink.content) ?
+             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
+             '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
  
  
  
