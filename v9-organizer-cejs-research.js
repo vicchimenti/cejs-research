@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.9
+     *     @version 9.2.10
      */
 
 
@@ -357,6 +357,17 @@
 
 
         /***
+          *  check for department
+          * 
+          * */
+         let departmentString = (cejsrDict.department.content) ?
+         '<p class="card-text department">' + cejsrDict.department.content + '</p>' :
+         '<p class="card-text department visually-hidden hidden">No valid subject provided</p>';
+
+
+
+
+        /***
           *  check for research format 
           * 
           * */
@@ -500,11 +511,12 @@
                  beginningHTML,
                  openCardHeader,
                  titleLink,
+                 departmentString,
+                 collegeString,
+                 dateString,
+                 linkString,
                  closeCardHeader,
                  openBodyWrapper,
-                 linkString,
-                 dateString,
-                 collegeString,
                  descriptionString,
                  citationString,
                  fullNameString,
