@@ -269,7 +269,7 @@
 
 
         /***
-          *  check for subject college
+          *  check for description
           * 
           * */
          let descriptionString = (cejsrDict.description.content) ?
@@ -284,8 +284,8 @@
           * 
           * */
          let collegeString = (cejsrDict.college.content) ?
-         '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
-         '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+            '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
+            '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
           
  
  
