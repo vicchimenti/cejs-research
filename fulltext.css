@@ -1,135 +1,196 @@
 /***
-*       Custom Fulltext Styles for the CEJS Research Content Type
-*       ID: 5945
+    ==========================================================================================
+    ===== CEJS Research === Campus cejsResearchWrappers ===== Content Type: #5945 ================
+    ==========================================================================================
+    CEJS Research - Content Type requires Organizer - ZoneA
+
 */
 
-#pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
-    color: #AA0000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.6rem;
-    font-weight: 500;
-    hyphens: none;
-    padding: 3rem 0 0 0;
-    margin: 0;
+.organizerWrapper h2.organizerTitle {
+    margin-bottom: 3rem;
 }
 
-.cejscourseItem .cejscImageWrapper {
-    padding: 0;
-}
-
-.cejscourseItem p.card-subtitle {
-    font-size: 2rem;
-}
-
-.cejscourseItem .articleSummary p {
-    font-weight: 500;
-}
-
-.cejscourseItem ul.iconDashboard {
-    margin: 0 0 2rem 0;
-}
-
-.cejscourseItem ul.iconDashboard li.sdgIcon {
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 0;
-    background-color: transparent;
+.cejsResearchWrapper.card {
+    background-color: #f7f7f7;
     border: none;
-}
-
-.cejscourseItem ul.iconDashboard li:before {
-    content: unset;
-}
-
-.cejscourseItem ul.lsapIconDashboard {
-    margin: 0;
-}
-
-.cejscourseItem ul.lsapIconDashboard li.lsapIcon {
-    display: inline-block;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    margin: 0 0 3rem 0;
     padding: 0;
-    margin-bottom: 0;
-    background-color: transparent;
+}
+
+.cejsResearchWrapper:first-child {
     border: none;
-}
-
-.cejscourseItem ul.lsapIconDashboard li:before {
-    content: unset;
-}
-
-.cejscourseItem .lsapIcon img.listgroupImage {
-    max-height: 115px;
-    max-width: 115px;
-    padding: 0 0 0.5rem 0;
-}
-
-.cejscourseItem img.listgroupImage {
-    max-height: 115px;
-    max-width: 115px;
+    margin: 0;
     padding: 0;
 }
 
-.cejscourseItem .card-footer {
+.cejsResearchWrapper .card-header {
+    margin: 0 1.5rem 1.6rem 1.5rem;
     padding-top: 1rem;
 }
 
-.cejscourseItem .card-footer p {
+.cejsResearchWrapper .card-body {
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cejsResearchWrapper ul {
+    margin: 0;
+}
+
+.cejsResearchWrapper h3.card-title {
+    color: #AA0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.cejsResearchWrapper h3.card-title a {
+    color: #AA0000;
+}
+
+.cejsResearchWrapper h3.card-title a:hover,
+.cejsResearchWrapper h3.card-title a:focus {
+    color: #AA0000;
+}
+
+.cejsResearchWrapper p.card-subtitle {
     font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75;
+    margin-bottom: 0;
+}
+
+.cejsResearchWrapper .publishDetails {
+    margin: 1.6rem 0;
+}
+
+.cejsResearchWrapper .publishDetails p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.cejsResearchWrapper .journalLink a {
+    color: #088099;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cejsResearchWrapper .journalLink a:hover {
+    text-decoration: underline;
+}
+
+.cejsResearchWrapper .journalLink a:focus {
+    text-decoration: underline;
+}
+
+.cejsResearchWrapper .typeDetails {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+    padding: 1rem 4rem;
+}
+
+.cejsResearchWrapper .typeDetails p.researchFormat {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cejsResearchWrapper .typeDetails p.description {
+    margin: 0;
+}
+
+
+
+
+
+
+.cejsResearchWrapper .articleSummary p {
+    font-weight: 500;
+}
+
+.cejsResearchWrapper p.shortSummary a {
+    color: #aa0000;
+    text-decoration: none;
+}
+
+.cejsResearchWrapper p.shortSummary a:hover,
+.cejsResearchWrapper p.shortSummary a:focus {
+    text-decoration: underline;
+}
+
+.cejsResearchWrapper span.readMore {
+    display: inline-block;
+}
+
+.cejsResearchWrapper span.readMore:after {
+    color: #aa0000;
+    content: ' b';
+    font-family: 'seattle-u';
+    position: relative;
+    text-transform: lowercase;
+    top: 4px;
+    white-space: nowrap;
+}
+
+.cejsResearchWrapper ul.iconDashboard li.sdgIcon {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cejsResearchWrapper ul.iconDashboard li:before {
+    content: unset;
+}
+
+.cejsResearchWrapper img.listgroupImage {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0;
+}
+
+.cejsResearchWrapper ul.lsapIconDashboard li.lsapIcon {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cejsResearchWrapper ul.lsapIconDashboard li:before {
+    content: unset;
+}
+
+.cejsResearchWrapper .lsapIcon img.listgroupImage {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0 0 0.5rem 0;
+}
+
+.cejsResearchWrapper .externalLink a:hover,
+.cejsResearchWrapper .externalLink a:focus {
+    text-decoration: underline;
+}
+
+.cejsResearchWrapper hr.articleBorderBottom {
+    border-top: 3px solid #e5e5e5;
+    display: block;
+    height: 3px;
+    margin-bottom: 20px;
 }
 
 
 /***
-* Media Queries
-*
-*/
+    ==========================================================================================
+    ===== CEJS Research === Campus cejsResearchWrappers ===== Content Type: #5945 ================
+    ==========================================================================================
+    CEJS Research - Content Type requires Organizer
 
-@media screen and (max-width: 991.98px) {
-    .cejscourseItem {
-        padding: 1rem;
-    }
-    #pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
-        font-size: 3rem;
-        padding: 3rem 0 0 0;
-    }
-    .cejscourseItem p.card-subtitle {
-        font-size: 1.8rem;
-    }
-    .cejscourseItem .lsapIcon img.listgroupImage {
-        max-height: 100px;
-        max-width: 100px;
-        padding: 0 0 0.5rem 0;
-    }
-    .cejscourseItem img.listgroupImage {
-        max-height: 100px;
-        max-width: 100px;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 767.98px) {
-    #pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
-        font-size: 2.4rem;
-        padding: 3rem 0 0 0;
-    }
-    .cejscourseItem p.card-subtitle {
-        font-size: 1.6rem;
-    }
-    .cejscourseItem .lsapIcon img.listgroupImage {
-        max-height: 75px;
-        max-width: 75px;
-        padding: 0 0 0.5rem 0;
-    }
-    .cejscourseItem img.listgroupImage {
-        max-height: 75px;
-        max-width: 75px;
-        padding: 0;
-    }
-}
-
-
-/***
-*       Custom Fulltext Styles for the CEJS Research Content Type
-*       ID: 5945
 */
