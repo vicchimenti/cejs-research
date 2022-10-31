@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.10
+     *     @version 9.2.11
      */
 
 
@@ -515,11 +515,11 @@
                  collegeString,
                  dateString,
                  linkString,
+                 fullNameString,
                  closeCardHeader,
                  openBodyWrapper,
                  descriptionString,
                  citationString,
-                 fullNameString,
                  firstNameString,
                  lastNameString,
                  formatString,
