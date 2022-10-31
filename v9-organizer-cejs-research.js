@@ -207,8 +207,9 @@
          let cejsrDict = {
  
              contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-             
              articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
+
+
              courseName: getContentValues('<t4 type="content" name="Course Name" output="normal" modifiers="striptags,htmlentities" />'),
              college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
              academicLevel: getContentValues('<t4 type="content" name="Section Academic Level" output="normal" modifiers="striptags,htmlentities" />'),
@@ -262,11 +263,11 @@
           *  check for fulltext content
           * 
           * */
-         let titleLink = (cejsrDict.articleTitle.content && cejsrDict.courseName.content) ?
-             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.courseName.content + ' : ' + cejsrDict.articleTitle.content + '</a></h3>' :
-             (cejsrDict.articleTitle.content && !cejsrDict.courseName.content) ?
-             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
-             '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
+         let titleLink = (cejsrDict.articleTitle.content) ?
+            //  '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.courseName.content + ' : ' + cejsrDict.articleTitle.content + '</a></h3>' :
+            //  (cejsrDict.articleTitle.content && !cejsrDict.courseName.content) ?
+            //  '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
+            //  '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
  
  
  
