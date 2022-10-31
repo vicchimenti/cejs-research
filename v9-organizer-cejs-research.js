@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.8
+     *     @version 9.2.9
      */
 
 
@@ -269,12 +269,24 @@
 
 
         /***
-          *  check for description
+          *  check for url
           * 
           * */
          let linkString = (cejsrDict.journalLink.content && cejsrDict.publisher.content) ?
             '<p class="card-text journalLink"><a href="' + cejsrDict.journalLink.content + '" class="card-link" title="Visit the publisher: ' + cejsrDict.publisher.content + '" target="_blank">' + cejsrDict.publisher.content + '</a></p>' :
             '<p class="card-text journalLink visually-hidden hidden">No valid subject provided</p>';
+
+
+
+
+        /***
+          *  check for url
+          * 
+          * */
+         let dateString = (cejsrDict.sourceDate.content) ?
+            '<p class="card-text sourceDate">' + cejsrDict.sourceDate.content + '</p>' :
+            '<p class="card-text sourceDate visually-hidden hidden">No valid subject provided</p>';
+
 
 
 
@@ -491,6 +503,7 @@
                  closeCardHeader,
                  openBodyWrapper,
                  linkString,
+                 dateString,
                  collegeString,
                  descriptionString,
                  citationString,
