@@ -213,10 +213,9 @@
              fullName: getContentValues('<t4 type="content" name="Full Name" output="normal" modifiers="striptags,htmlentities" />'),
              firstName: getContentValues('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />'),
              lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
-
-
-
              college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
+
+
              academicLevel: getContentValues('<t4 type="content" name="Section Academic Level" output="normal" modifiers="striptags,htmlentities" />'),
              primarySectionName: getContentValues('<t4 type="content" name="Primary Section Name" output="normal" modifiers="striptags,htmlentities" />'),
              subjectDescription: getContentValues('<t4 type="content" name="Subject" output="normal" modifiers="striptags,htmlentities" />'),
@@ -327,13 +326,7 @@
  
  
  
-         /***
-          *  check for subject level
-          * 
-          * */
-         let academicLevelString = (cejsrDict.academicLevel.content) ?
-             '<span class="card-text academicLevel">' + cejsrDict.academicLevel.content + '</span>' :
-             '<span class="card-text academicLevel visually-hidden hidden">No valid subject provided</span>';
+
  
  
  
