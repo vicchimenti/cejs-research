@@ -9,7 +9,7 @@
     margin-bottom: 3rem;
 }
 
-.cejsResearchWrapper.card {
+.cejsResearchItem.card {
     background-color: #f7f7f7;
     border: none;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
@@ -17,27 +17,27 @@
     padding: 0;
 }
 
-.cejsResearchWrapper:first-child {
+.cejsResearchItem:first-child {
     border: none;
     margin: 0;
     padding: 0;
 }
 
-.cejsResearchWrapper .card-header {
+.cejsResearchItem .card-header {
     margin: 0 1.5rem 1.6rem 1.5rem;
     padding-top: 1rem;
 }
 
-.cejsResearchWrapper .card-body {
+.cejsResearchItem .card-body {
     margin: 0 1.5rem;
     padding-bottom: 1rem;
 }
 
-.cejsResearchWrapper ul {
+.cejsResearchItem ul {
     margin: 0;
 }
 
-.cejsResearchWrapper h3.card-title {
+.cejsResearchItem h3.card-title {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
     font-size: 2.2rem;
@@ -46,25 +46,25 @@
     padding: 1rem 0 0 0;
 }
 
-.cejsResearchWrapper h3.card-title a {
+.cejsResearchItem h3.card-title a {
     color: #AA0000;
 }
 
-.cejsResearchWrapper h3.card-title a:hover,
-.cejsResearchWrapper h3.card-title a:focus {
+.cejsResearchItem h3.card-title a:hover,
+.cejsResearchItem h3.card-title a:focus {
     color: #AA0000;
 }
 
-.cejsResearchWrapper p.card-subtitle {
+.cejsResearchItem p.card-subtitle {
     font-size: 1.6rem;
     margin-bottom: 0;
 }
 
-.cejsResearchWrapper .publishDetails {
+.cejsResearchItem .publishDetails {
     margin: 1.6rem 0;
 }
 
-.cejsResearchWrapper .publishDetails p {
+.cejsResearchItem .publishDetails p {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
@@ -72,22 +72,22 @@
     padding: 0;
 }
 
-.cejsResearchWrapper .journalLink a {
+.cejsResearchItem .journalLink a {
     color: #088099;
     font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
 }
 
-.cejsResearchWrapper .journalLink a:hover {
+.cejsResearchItem .journalLink a:hover {
     text-decoration: underline;
 }
 
-.cejsResearchWrapper .journalLink a:focus {
+.cejsResearchItem .journalLink a:focus {
     text-decoration: underline;
 }
 
-.cejsResearchWrapper .typeDetails {
+.cejsResearchItem .typeDetails {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
@@ -95,12 +95,12 @@
     padding: 1rem 4rem;
 }
 
-.cejsResearchWrapper .typeDetails p.researchFormat {
+.cejsResearchItem .typeDetails p.researchFormat {
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.cejsResearchWrapper .typeDetails p.description {
+.cejsResearchItem .typeDetails p.description {
     margin: 0;
 }
 
@@ -109,25 +109,25 @@
 
 
 
-.cejsResearchWrapper .articleSummary p {
+.cejsResearchItem .articleSummary p {
     font-weight: 500;
 }
 
-.cejsResearchWrapper p.shortSummary a {
+.cejsResearchItem p.shortSummary a {
     color: #aa0000;
     text-decoration: none;
 }
 
-.cejsResearchWrapper p.shortSummary a:hover,
-.cejsResearchWrapper p.shortSummary a:focus {
+.cejsResearchItem p.shortSummary a:hover,
+.cejsResearchItem p.shortSummary a:focus {
     text-decoration: underline;
 }
 
-.cejsResearchWrapper span.readMore {
+.cejsResearchItem span.readMore {
     display: inline-block;
 }
 
-.cejsResearchWrapper span.readMore:after {
+.cejsResearchItem span.readMore:after {
     color: #aa0000;
     content: ' b';
     font-family: 'seattle-u';
@@ -137,7 +137,7 @@
     white-space: nowrap;
 }
 
-.cejsResearchWrapper ul.iconDashboard li.sdgIcon {
+.cejsResearchItem ul.iconDashboard li.sdgIcon {
     background-color: transparent;
     border: none;
     display: inline-block;
@@ -145,17 +145,17 @@
     margin-bottom: 0;
 }
 
-.cejsResearchWrapper ul.iconDashboard li:before {
+.cejsResearchItem ul.iconDashboard li:before {
     content: unset;
 }
 
-.cejsResearchWrapper img.listgroupImage {
+.cejsResearchItem img.listgroupImage {
     max-height: 100px;
     max-width: 100px;
     padding: 0;
 }
 
-.cejsResearchWrapper ul.lsapIconDashboard li.lsapIcon {
+.cejsResearchItem ul.lsapIconDashboard li.lsapIcon {
     background-color: transparent;
     border: none;
     display: inline-block;
@@ -163,22 +163,22 @@
     margin-bottom: 0;
 }
 
-.cejsResearchWrapper ul.lsapIconDashboard li:before {
+.cejsResearchItem ul.lsapIconDashboard li:before {
     content: unset;
 }
 
-.cejsResearchWrapper .lsapIcon img.listgroupImage {
+.cejsResearchItem .lsapIcon img.listgroupImage {
     max-height: 100px;
     max-width: 100px;
     padding: 0 0 0.5rem 0;
 }
 
-.cejsResearchWrapper .externalLink a:hover,
-.cejsResearchWrapper .externalLink a:focus {
+.cejsResearchItem .externalLink a:hover,
+.cejsResearchItem .externalLink a:focus {
     text-decoration: underline;
 }
 
-.cejsResearchWrapper hr.articleBorderBottom {
+.cejsResearchItem hr.articleBorderBottom {
     border-top: 3px solid #e5e5e5;
     display: block;
     height: 3px;
