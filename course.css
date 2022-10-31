@@ -10,7 +10,7 @@
     margin-bottom: 3rem;
 }
 
-.cejscourseWrapper.card {
+.cejsResearchWrapper.card {
     background-color: #f7f7f7;
     border: none;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
@@ -18,27 +18,27 @@
     padding: 0;
 }
 
-.cejscourseWrapper:first-child {
+.cejsResearchWrapper:first-child {
     border: none;
     margin: 0;
     padding: 0;
 }
 
-.cejscourseWrapper .card-header {
+.cejsResearchWrapper .card-header {
     margin: 0 1.5rem 1.6rem 1.5rem;
     padding-top: 1rem;
 }
 
-.cejscourseWrapper .card-body {
+.cejsResearchWrapper .card-body {
     margin: 0 1.5rem;
     padding-bottom: 1rem;
 }
 
-.cejscourseWrapper ul {
+.cejsResearchWrapper ul {
     margin: 0;
 }
 
-.cejscourseWrapper h3.card-title {
+.cejsResearchWrapper h3.card-title {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
     font-size: 2.2rem;
@@ -47,39 +47,39 @@
     padding: 1rem 0 0 0;
 }
 
-.cejscourseWrapper h3.card-title a {
+.cejsResearchWrapper h3.card-title a {
     color: #AA0000;
 }
 
-.cejscourseWrapper h3.card-title a:hover,
-.cejscourseWrapper h3.card-title a:focus {
+.cejsResearchWrapper h3.card-title a:hover,
+.cejsResearchWrapper h3.card-title a:focus {
     color: #AA0000;
 }
 
-.cejscourseWrapper p.card-subtitle {
+.cejsResearchWrapper p.card-subtitle {
     font-size: 1.6rem;
     margin-bottom: 0;
 }
 
-.cejscourseWrapper .articleSummary p {
+.cejsResearchWrapper .articleSummary p {
     font-weight: 500;
 }
 
-.cejscourseWrapper p.shortSummary a {
+.cejsResearchWrapper p.shortSummary a {
     color: #aa0000;
     text-decoration: none;
 }
 
-.cejscourseWrapper p.shortSummary a:hover,
-.cejscourseWrapper p.shortSummary a:focus {
+.cejsResearchWrapper p.shortSummary a:hover,
+.cejsResearchWrapper p.shortSummary a:focus {
     text-decoration: underline;
 }
 
-.cejscourseWrapper span.readMore {
+.cejsResearchWrapper span.readMore {
     display: inline-block;
 }
 
-.cejscourseWrapper span.readMore:after {
+.cejsResearchWrapper span.readMore:after {
     color: #aa0000;
     content: ' b';
     font-family: 'seattle-u';
@@ -89,7 +89,7 @@
     white-space: nowrap;
 }
 
-.cejscourseWrapper ul.iconDashboard li.sdgIcon {
+.cejsResearchWrapper ul.iconDashboard li.sdgIcon {
     background-color: transparent;
     border: none;
     display: inline-block;
@@ -97,17 +97,17 @@
     margin-bottom: 0;
 }
 
-.cejscourseWrapper ul.iconDashboard li:before {
+.cejsResearchWrapper ul.iconDashboard li:before {
     content: unset;
 }
 
-.cejscourseWrapper img.listgroupImage {
+.cejsResearchWrapper img.listgroupImage {
     max-height: 100px;
     max-width: 100px;
     padding: 0;
 }
 
-.cejscourseWrapper ul.lsapIconDashboard li.lsapIcon {
+.cejsResearchWrapper ul.lsapIconDashboard li.lsapIcon {
     background-color: transparent;
     border: none;
     display: inline-block;
@@ -115,22 +115,22 @@
     margin-bottom: 0;
 }
 
-.cejscourseWrapper ul.lsapIconDashboard li:before {
+.cejsResearchWrapper ul.lsapIconDashboard li:before {
     content: unset;
 }
 
-.cejscourseWrapper .lsapIcon img.listgroupImage {
+.cejsResearchWrapper .lsapIcon img.listgroupImage {
     max-height: 100px;
     max-width: 100px;
     padding: 0 0 0.5rem 0;
 }
 
-.cejscourseWrapper .externalLink a:hover,
-.cejscourseWrapper .externalLink a:focus {
+.cejsResearchWrapper .externalLink a:hover,
+.cejsResearchWrapper .externalLink a:focus {
     text-decoration: underline;
 }
 
-.cejscourseWrapper hr.articleBorderBottom {
+.cejsResearchWrapper hr.articleBorderBottom {
     border-top: 3px solid #e5e5e5;
     display: block;
     height: 3px;
