@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.5
+     *     @version 9.2.6
      */
 
 
@@ -317,8 +317,8 @@
           * 
           * */
          let lastNameString = (cejsrDict.lastName.content) ?
-            '<p class="card-text firstName">' + cejsrDict.lastName.content + '</p>' :
-            '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
+            '<p class="card-text lastName">' + cejsrDict.lastName.content + '</p>' :
+            '<p class="card-text lastName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -330,6 +330,28 @@
          let collegeString = (cejsrDict.college.content) ?
             '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
             '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
+
+
+
+
+        /***
+          *  check for research format 
+          * 
+          * */
+         let formatString = (cejsrDict.researchFormat.content) ?
+         '<p class="card-text researchFormat">' + cejsrDict.researchFormat.content + '</p>' :
+         '<p class="card-text researchFormat visually-hidden hidden">No valid subject provided</p>';
+
+
+
+
+        /***
+          *  check for Research type
+          * 
+          * */
+         let typeString = (cejsrDict.researchType.content) ?
+            '<p class="card-text researchType">' + cejsrDict.researchType.content + '</p>' :
+            '<p class="card-text researchType visually-hidden hidden">No valid subject provided</p>';
           
  
  
@@ -464,6 +486,8 @@
                  fullNameString,
                  firstNameString,
                  lastNameString,
+                 formatString,
+                 typeString,
                  listOfLsapIcons,
                  listOfIcons,
                  closeBodyWrapper,
