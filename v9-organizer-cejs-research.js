@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.16
+     *     @version 9.2.17
      */
 
 
@@ -532,10 +532,12 @@
                  closeDetails,
                  closeCardHeader,
                  openBodyWrapper,
+                 openType,
+                 formatString,
                  descriptionString,
                  citationString,
-                 formatString,
                  typeString,
+                 closeType,
                  listOfLsapIcons,
                  listOfIcons,
                  closeBodyWrapper,
