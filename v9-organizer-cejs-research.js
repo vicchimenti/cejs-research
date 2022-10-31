@@ -254,10 +254,6 @@
                                 '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
                                 '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
-
-
-
-
  
   
 
@@ -268,6 +264,29 @@
          let titleLink = (cejsrDict.articleTitle.content && cejsrDict.fullTextLink.content) ?
              '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
              '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
+
+
+
+
+        /***
+          *  check for subject college
+          * 
+          * */
+         let descriptionString = (cejsrDict.description.content) ?
+            '<span class="card-text description">' + cejsrDict.description.content + '</span>' :
+            '<span class="card-text description visually-hidden hidden">No valid subject provided</span>';
+
+
+
+
+        /***
+          *  check for subject college
+          * 
+          * */
+         let collegeString = (cejsrDict.college.content) ?
+         '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
+         '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+          
  
  
  
@@ -303,9 +322,9 @@
           *  check for subject college
           * 
           * */
-         let collegeString = (cejsrDict.college.content) ?
-             '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
-             '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+        //  let collegeString = (cejsrDict.college.content) ?
+        //      '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
+        //      '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
  
  
  
