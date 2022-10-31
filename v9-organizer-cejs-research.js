@@ -215,7 +215,8 @@
              lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
              college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
              department: getContentValues('<t4 type="content" name="Department" output="normal" modifiers="striptags,htmlentities" />'),
-             format: getContentValues('<t4 type="content" name="Paper or Presentation" output="normal" modifiers="striptags,htmlentities" />'),
+             researchFormat: getContentValues('<t4 type="content" name="Paper or Presentation" output="normal" modifiers="striptags,htmlentities" />'),
+             researchType: getContentValues('<t4 type="content" name="Type" output="normal" modifiers="striptags,htmlentities" />'),
 
 
              icons: getContentValues('<t4 type="content" name="Icon ID" output="normal" modifiers="striptags,htmlentities" />'),
