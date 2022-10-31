@@ -302,6 +302,17 @@
 
 
         /***
+          *  check for firstname
+          * 
+          * */
+         let firstNameString = (cejsrDict.firstName.content) ?
+            '<span class="card-text firstName">' + cejsrDict.firstName.content + '</span>' :
+            '<span class="card-text firstName visually-hidden hidden">No valid subject provided</span>';
+
+
+
+
+        /***
           *  check for subject college
           * 
           * */
@@ -440,6 +451,7 @@
                  descriptionString,
                  citationString,
                  fullNameString,
+                 firstNameString,
                  listOfLsapIcons,
                  listOfIcons,
                  closeBodyWrapper,
