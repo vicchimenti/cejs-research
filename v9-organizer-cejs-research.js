@@ -335,21 +335,21 @@
           *  define subtitle
           * 
           * */
-         let subtitleString = (cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + ' | ' + academicLevelString + '</p>' :
-             (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + '</p>' :
-             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + subjectString + ' | ' + academicLevelString + '</p>' :
-             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + collegeString + ' | ' + academicLevelString + '</p>' :
-             (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + academicLevelString + '</p>' :
-             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + collegeString + '</p>' :
-             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + subjectString + '</p>' :
-             '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
+        //  let subtitleString = (cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + ' | ' + academicLevelString + '</p>' :
+        //      (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + '</p>' :
+        //      (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + subjectString + ' | ' + academicLevelString + '</p>' :
+        //      (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + collegeString + ' | ' + academicLevelString + '</p>' :
+        //      (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + academicLevelString + '</p>' :
+        //      (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + collegeString + '</p>' :
+        //      (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+        //      '<p class="card-subtitle">' + subjectString + '</p>' :
+        //      '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
  
  
  
@@ -409,7 +409,7 @@
                  beginningHTML,
                  openCardHeader,
                  titleLink,
-                 subtitleString,
+                //  subtitleString,
                  closeCardHeader,
                  openBodyWrapper,
                  summaryString,
