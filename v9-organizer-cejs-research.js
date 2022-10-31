@@ -224,7 +224,7 @@
 
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
-                        
+
              summaryDescription: getContentValues('<t4 type="content" name="Plaintext Description" output="normal" modifiers="striptags,htmlentities" />'),
              fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
              contentId: getContentValues('<t4 type="meta" meta="content_id" />')
@@ -285,14 +285,14 @@
           *  find string length and truncate
           * 
           * */
-         let maxLength = 200;
-         let plainString = (cejsrDict.summaryDescription.content) ? '' + cejsrDict.summaryDescription.content +  '' : null;
-         let actualLength = (plainString) ? plainString.length : null;
-         let summarySubstring = (plainString && actualLength && actualLength > maxLength) ?
-                                plainString.substring(0, maxLength) :
-                                (plainString && actualLength && actualLength <= maxLength) ?
-                                plainString.substring(0, actualLength) :
-                                null;
+        //  let maxLength = 200;
+        //  let plainString = (cejsrDict.summaryDescription.content) ? '' + cejsrDict.summaryDescription.content +  '' : null;
+        //  let actualLength = (plainString) ? plainString.length : null;
+        //  let summarySubstring = (plainString && actualLength && actualLength > maxLength) ?
+        //                         plainString.substring(0, maxLength) :
+        //                         (plainString && actualLength && actualLength <= maxLength) ?
+        //                         plainString.substring(0, actualLength) :
+        //                         null;
                                 
                                 
 
