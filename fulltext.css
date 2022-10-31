@@ -3,121 +3,133 @@
 *       ID: 5650
 */
 
-
 #pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 500;
     hyphens: none;
-    padding: 3rem 0 3rem 0;
+    padding: 3rem 0 0 0;
     margin: 0;
 }
-
-.cejscourseItem .row {
-    padding: 0;
-    margin: 0;
-}
-
 
 .cejscourseItem .cejscImageWrapper {
     padding: 0;
 }
 
-.cejscourseItem .cejscImageWrapper img.card-img {
+.cejscourseItem p.card-subtitle {
+    font-size: 2rem;
+}
+
+.cejscourseItem .articleSummary p {
+    font-weight: 500;
+}
+
+.cejscourseItem ul.iconDashboard {
+    margin: 0 0 2rem 0;
+}
+
+.cejscourseItem ul.iconDashboard li.sdgIcon {
+    display: inline-block;
     padding: 0;
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
-}
-
-.cejscourseItem .card-footer {
-    padding-top: 3rem;
-}
-
-.announcementFullText img.card-img-top {
-    padding: 1rem 0;
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
-}
-
-.row.summaryWrapper {
-    margin: 0;
-}
-
-.announcementFullText.newsArticleWrapper .externalLink a {
-    color: #088099;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.announcementFullText.newsArticleWrapper .externalLink a:hover {
-    text-decoration: underline;
-}
-
-.announcementFullText.newsArticleWrapper .externalLink a:focus {
-    text-decoration: underline;
-}
-
-.announcementFullText .articleSummary p {
-    font-weight: 500;
-}
-
-.announcementFullText div.newsroomArticle.tags {
-    display: inline-flex;
-    width: auto;
-}
-
-.announcementFullText ul.categories {
     margin-bottom: 0;
-    margin-left: 0;
-}
-
-.announcementFullText ul.categories li {
-    background: none;
+    background-color: transparent;
     border: none;
-    color: #AA0000;
-    display: inline-block !important;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 0.5rem 2rem 0 0;
 }
 
-.announcementFullText .audience ul.categories li {
-    color: #55B31B;
-}
-
-.announcementFullText ul.categories li:before {
+.cejscourseItem ul.iconDashboard li:before {
     content: unset;
 }
 
-.announcementFullText hr.articleBorderBottom {
-    border-top: 3px solid #e5e5e5;
-    display: block;
-    height: 3px;
+.cejscourseItem ul.lsapIconDashboard {
+    margin: 0;
 }
 
-.announcementFullText .article figcaption.figure-caption {
-    color: #333333;
+.cejscourseItem ul.lsapIconDashboard li.lsapIcon {
     display: inline-block;
-    font-size: 2rem;
-    font-weight: 500;
-    hyphens: none;
-    line-height: 1.5;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
 }
 
-.announcementFullText .article .imageCredit {
-    color: #333333;
-    font-size: 1.25rem;
+.cejscourseItem ul.lsapIconDashboard li:before {
+    content: unset;
+}
+
+.cejscourseItem .lsapIcon img.listgroupImage {
+    max-height: 115px;
+    max-width: 115px;
+    padding: 0 0 0.5rem 0;
+}
+
+.cejscourseItem img.listgroupImage {
+    max-height: 115px;
+    max-width: 115px;
+    padding: 0;
+}
+
+.cejscourseItem .card-footer {
+    padding-top: 1rem;
+}
+
+.cejscourseItem .card-footer p {
+    font-size: 1.6rem;
     font-weight: 400;
-    hyphens: none;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
-.announcementFullText .standardContent .card-body .fullTextBody p {
-    margin-bottom: 1.6rem;
+
+/***
+* Media Queries
+*
+*/
+
+@media screen and (max-width: 991.98px) {
+    .cejscourseItem {
+        padding: 1rem;
+    }
+    #pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
+        font-size: 3rem;
+        padding: 3rem 0 0 0;
+    }
+    .cejscourseItem p.card-subtitle {
+        font-size: 1.8rem;
+    }
+    .cejscourseItem .lsapIcon img.listgroupImage {
+        max-height: 100px;
+        max-width: 100px;
+        padding: 0 0 0.5rem 0;
+    }
+    .cejscourseItem img.listgroupImage {
+        max-height: 100px;
+        max-width: 100px;
+        padding: 0;
+    }
 }
+
+@media screen and (max-width: 767.98px) {
+    #pageContentWrapper .cejscourseItem .card-header h1#pageTitle {
+        font-size: 2.4rem;
+        padding: 3rem 0 0 0;
+    }
+    .cejscourseItem p.card-subtitle {
+        font-size: 1.6rem;
+    }
+    .cejscourseItem .lsapIcon img.listgroupImage {
+        max-height: 75px;
+        max-width: 75px;
+        padding: 0 0 0.5rem 0;
+    }
+    .cejscourseItem img.listgroupImage {
+        max-height: 75px;
+        max-width: 75px;
+        padding: 0;
+    }
+}
+
+
+/***
+*       Custom Fulltext Styles for the CEJS Course Content Type
+*       ID: 5650
+*/
