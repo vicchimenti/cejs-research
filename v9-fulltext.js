@@ -1,15 +1,12 @@
     /***
-     *     @author Victor Chimenti, MSCS
-     *     @file v9-organizer-cejs-research.js
-     *          v9/organizer/cejs/research
-     *          id:5945
+     *      @author Victor Chimenti, MSCS
+     *      @file v9-fulltext.js
+     *              v9/fulltext
+     *              id:5945
      *
-     *     This content type will work in conjunction with the Organizer and each item
-     *     will contain one announcement.
+     *      Document will write client side once when the page loads
      *
-     *     Document will write once when the page loads
-     *
-     *     @version 9.2.21
+     *      @version 9.2.21
      */
 
 
