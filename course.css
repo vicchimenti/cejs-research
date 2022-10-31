@@ -2,56 +2,40 @@
     ==========================================================================================
     ===== CEJS Course === Campus cejscourseWrappers ===== Content Type: #5650 ================
     ==========================================================================================
-    CEJS Course - Content Type requires Organizer
+    CEJS Course - Content Type requires Organizer - ZoneA
 
 */
- 
-
 
 .organizerWrapper h2.organizerTitle {
     margin-bottom: 3rem;
 }
 
-/* expand small images to fill available space on all browsers */
-.cejscourseWrapper img.articleImage {
-    padding: 0;
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
-}
-
 .cejscourseWrapper.card {
-    padding: 0;
+    background-color: #f7f7f7;
     border: none;
-    margin: 0;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    margin: 0 0 3rem 0;
+    padding: 0;
 }
 
 .cejscourseWrapper:first-child {
-    padding: 0;
     border: none;
     margin: 0;
-}
-
-.cejscourseWrapper .externalLink a {
-    color: #088099;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.cejscourseWrapper .publishDetails p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.6;
-    margin: 0;
     padding: 0;
 }
 
-.cejscourseWrapper .row.summaryWrapper {
+.cejscourseWrapper .card-header {
+    margin: 0 1.5rem 1.6rem 1.5rem;
+    padding-top: 1rem;
+}
+
+.cejscourseWrapper .card-body {
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cejscourseWrapper ul {
     margin: 0;
-    padding: 0 2rem 1rem 2rem;
 }
 
 .cejscourseWrapper h3.card-title {
@@ -59,7 +43,8 @@
     font-family: "Montserrat", sans-serif;
     font-size: 2.2rem;
     font-weight: 500;
-    padding: 0;
+    margin: 0;
+    padding: 1rem 0 0 0;
 }
 
 .cejscourseWrapper h3.card-title a {
@@ -71,90 +56,73 @@
     color: #AA0000;
 }
 
-.cejscourseWrapper .publishDetails {
-    margin: 1.6rem 0;
+.cejscourseWrapper p.card-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 0;
 }
 
 .cejscourseWrapper .articleSummary p {
     font-weight: 500;
 }
 
-.cejscourseWrapper .articleSummary p.summary {
-    font-size: 1.8rem;
-    line-height: 1.6;
+.cejscourseWrapper p.shortSummary a {
+    color: #aa0000;
+    text-decoration: none;
 }
 
-.cejscourseWrapper div.newsroomArticle.tags {
-    display: inline-flex;
-    width: auto;
+.cejscourseWrapper p.shortSummary a:hover,
+.cejscourseWrapper p.shortSummary a:focus {
+    text-decoration: underline;
 }
 
-.cejscourseWrapper ul.categories {
-    margin-bottom: 0;
-    margin-left: 0;
+.cejscourseWrapper span.readMore {
+    display: inline-block;
 }
 
-.cejscourseWrapper ul.categories li {
-    background: none;
+.cejscourseWrapper span.readMore:after {
+    color: #aa0000;
+    content: ' b';
+    font-family: 'seattle-u';
+    position: relative;
+    text-transform: lowercase;
+    top: 4px;
+    white-space: nowrap;
+}
+
+.cejscourseWrapper ul.iconDashboard li.sdgIcon {
+    background-color: transparent;
     border: none;
-    color: #AA0000;
-    display: inline-block !important;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 0.5rem 2rem 0 0;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.cejscourseWrapper .audience ul.categories li {
-    color: #55B31B;
-}
-
-.cejscourseWrapper ul.categories li:before {
+.cejscourseWrapper ul.iconDashboard li:before {
     content: unset;
 }
 
-.cejscourseWrapper .articleSummary .panelLinks {
-    padding-top: 30px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    margin: auto auto;
-    list-style-type: none;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.cejscourseWrapper img.listgroupImage {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0;
 }
 
-.cejscourseWrapper .articleSummary .panelLinks a {
-    color: #aa0000;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+.cejscourseWrapper ul.lsapIconDashboard li.lsapIcon {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.cejscourseWrapper .articleSummary .panelLinks li {
-    border: 1px solid #088099;
-    display: flex;
-    flex: 0 1 calc(50% - 7px);
-    flex-direction: column;
-    justify-content: center;
+.cejscourseWrapper ul.lsapIconDashboard li:before {
+    content: unset;
 }
 
-.cejscourseWrapper .articleSummary ul.panelLinks li:before {
-    content: '';
-    padding-right: 0px;
-}
-
-.cejscourseWrapper .articleSummary .panelLinks li:hover,
-.panelInner .panelLinks li:focus,
-.cejscourseWrapper .articleSummary .panelLinks li a:hover,
-.panelInner .panelLinks li a:focus {
-    background: #088099;
-    color: #ffffff;
+.cejscourseWrapper .lsapIcon img.listgroupImage {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0 0 0.5rem 0;
 }
 
 .cejscourseWrapper .externalLink a:hover,
@@ -168,91 +136,6 @@
     height: 3px;
     margin-bottom: 20px;
 }
-
-
-/* Mobile layouts below 992 */
-
-@media screen and (max-width: 991.99px) {
-
-    .organizerWrapper .cejscourseWrapper h3.card-title {
-        padding: 0;
-    }
-
-    .cejscourseWrapper div.newsroomArticle.tags {
-        width: unset;
-    }
-}
-
-
-/* ZoneB Defaults */
-
-.cejscourseWrapperZoneb {
-    padding: 0;
-    border: none;
-    margin: 0;
-}
-
-.cejscourseWrapperZoneb .externalLink a {
-    font-size: 1.35rem;
-}
-
-.cejscourseWrapperZoneb {
-    padding: 0;
-    border: none;
-    margin: 0;
-}
-
-.cejscourseWrapperZoneb .externalLink a {
-    font-size: 1.35rem;
-}
-
-
-.cejscourseWrapperZoneb .row.summaryWrapper {
-    margin: 0;
-    padding: 0;
-}
-
-.cejscourseWrapperZoneb h4.card-title {
-    color: #AA0000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 500;
-}
-
-.cejscourseWrapperZoneb h4.card-title a {
-    color: #AA0000;
-}
-
-.cejscourseWrapperZoneb h4.card-title a:hover,
-.cejscourseWrapperZoneb h4.card-title a:focus {
-    color: #AA0000;
-}
-
-.cejscourseWrapperZoneb .articleSummary p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-.cejscourseWrapperZoneb hr.articleBorderBottom {
-    border-top: 3px solid #e5e5e5;
-    display: block;
-    height: 3px;
-    margin: 0;
-}
-
-
-/* Mobile layouts below 992 */
-
-@media screen and (max-width: 991.99px) {
-    #zoneA .cejscourseWrapperZoneb {
-        padding: 0 2rem;
-    }
-    .cejscourseWrapper div.newsroomArticle.tags {
-        width: unset;
-    }
-}
-
 
 
 /***
