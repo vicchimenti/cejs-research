@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.11
+     *     @version 9.2.12
      */
 
 
@@ -410,9 +410,9 @@
           *  check for subject Description
           * 
           * */
-        //  let subjectString = (cejsrDict.subjectDescription.content) ?
-        //      '<span class="card-text subject"><em>' + cejsrDict.subjectDescription.content + '</em></span>' :
-        //      '<span class="card-text subject visually-hidden hidden">No valid subject provided</span>';
+         let departmentSpan = (cejsrDict.department.content) ?
+             '<span class="card-text department"><em>' + cejsrDict.department.content + '</em></span>' :
+             '<span class="card-text department visually-hidden hidden">No valid subject provided</span>';
  
  
  
@@ -421,9 +421,20 @@
           *  check for subject college
           * 
           * */
-        //  let collegeString = (cejsrDict.college.content) ?
-        //      '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
-        //      '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+         let collegeSpan = (cejsrDict.college.content) ?
+             '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
+             '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+
+
+
+
+        /***
+          *  check for subject college
+          * 
+          * */
+         let dateSpan = (cejsrDict.sourceDate.content) ?
+         '<span class="card-text college">' + cejsrDict.sourceDate.content + '</span>' :
+         '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
  
  
  
@@ -437,21 +448,21 @@
           *  define subtitle
           * 
           * */
-        //  let subtitleString = (cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + ' | ' + academicLevelString + '</p>' :
-        //      (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + '</p>' :
-        //      (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + subjectString + ' | ' + academicLevelString + '</p>' :
-        //      (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + collegeString + ' | ' + academicLevelString + '</p>' :
-        //      (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + academicLevelString + '</p>' :
-        //      (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + collegeString + '</p>' :
-        //      (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-        //      '<p class="card-subtitle">' + subjectString + '</p>' :
-        //      '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
+         let subtitleString = (cejsrDict.department.content && cejsrDict.college.content && cejsrDict.sourceDate.content) ?
+             '<p class="card-subtitle">' + departmentSpan + ' | ' + collegeSpan + ' | ' + dateSpan + '</p>' :
+             (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + departmentSpan + ' | ' + collegeSpan + '</p>' :
+             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + departmentSpan + ' | ' + dateSpan + '</p>' :
+             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + collegeSpan + ' | ' + dateSpan + '</p>' :
+             (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + dateSpan + '</p>' :
+             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + collegeSpan + '</p>' :
+             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+             '<p class="card-subtitle">' + departmentSpan + '</p>' :
+             '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
  
  
  
@@ -511,6 +522,7 @@
                  beginningHTML,
                  openCardHeader,
                  titleLink,
+                 subtitleString,
                  departmentString,
                  collegeString,
                  dateString,
