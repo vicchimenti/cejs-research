@@ -333,9 +333,9 @@
           *  check for firstname
           * 
           * */
-         let firstNameString = (cejsrDict.firstName.content) ?
-            '<p class="card-text firstName">' + cejsrDict.firstName.content + '</p>' :
-            '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
+        //  let firstNameString = (cejsrDict.firstName.content) ?
+        //     '<p class="card-text firstName">' + cejsrDict.firstName.content + '</p>' :
+        //     '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -344,9 +344,9 @@
           *  check for last name
           * 
           * */
-         let lastNameString = (cejsrDict.lastName.content) ?
-            '<p class="card-text lastName">' + cejsrDict.lastName.content + '</p>' :
-            '<p class="card-text lastName visually-hidden hidden">No valid subject provided</p>';
+        //  let lastNameString = (cejsrDict.lastName.content) ?
+        //     '<p class="card-text lastName">' + cejsrDict.lastName.content + '</p>' :
+        //     '<p class="card-text lastName visually-hidden hidden">No valid subject provided</p>';
 
 
 
