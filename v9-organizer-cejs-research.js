@@ -349,9 +349,9 @@
           *  check for subject college
           * 
           * */
-         let collegeString = (cejsrDict.college.content) ?
-            '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
-            '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
+        //  let collegeString = (cejsrDict.college.content) ?
+        //     '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
+        //     '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
 
 
 
