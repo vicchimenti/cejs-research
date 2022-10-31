@@ -248,11 +248,11 @@
           *  define wrapper
           * 
           * */
-         let beginningHTML =    (cejsrDict.articleTitle.content) ?
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
-                                (cejsrDict.primarySectionName.content) ?
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.primarySectionName.content + '">' :
-                                '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
+        //  let beginningHTML =    (cejsrDict.articleTitle.content) ?
+        //                         '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
+        //                         (cejsrDict.primarySectionName.content) ?
+        //                         '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.primarySectionName.content + '">' :
+        //                         '<article class="cejscourseWrapper card shadow border-0 radius-0 mb-3" id="cejscourse' + cejsrDict.contentId.content + 'zonea" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
 
 
