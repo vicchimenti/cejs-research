@@ -1,0 +1,183 @@
+<!--
+*   @author Victor Chimenti, MSCS
+*   @file fieldcode.html
+*
+*   CEJS SDG Course Filter/Search Inputs
+*   Intended to reduce the number of Articles that render based on user provided parameters
+*   User may filter by keyword input and school
+-->
+
+<div class="titleWrapper visually-hidden hidden">
+    <h2 class="visually-hidden hidden">Filter Search</h2>
+</div>
+
+<div class="courseCounter standardContent">
+    <h3 class="d-inline">Available Courses</h3>
+    <span class="spacer d-inline">: </span>
+    <span class="d-inline" id="course-count"></span><br />
+</div>
+
+<form action="#" id="articleFilter">
+    <!-- Search Field -->
+    <fieldset for="articleFilter">
+
+
+
+        <div class="col-xs-12 form-group standardContent" id="keystroke_filter_field">
+            <label for="keystroke_filter" id="keystrokeLabel">Filter Articles</label>
+            <input type="text" class="form-control" name="articleScan" value="" id="keystroke_filter" placeholder="Search" aria-label="Filter Articles" />
+        </div>
+
+
+
+
+        <!-- Search By School  -->
+        <div class="col-xs-12 form-group form-check standardContent" id="SelectBox-BySchool">
+            <legend for="SelectBox-BySchool">
+                <h3>School</h3>
+            </legend>
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="Albers School of Business and Economics" value="Albers School of Business and Economics" />
+            <label for="Albers School of Business and Economics">Albers School of Business and Economics</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="College of Arts and Sciences" value="College of Arts and Sciences" />
+            <label for="College of Arts and Sciences">College of Arts and Sciences</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="College of Education" value="College of Education" />
+            <label for="College of Education">College of Education</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="College of Nursing" value="College of Nursing" />
+            <label for="College of Nursing">College of Nursing</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="College of Science and Engineering" value="College of Science and Engineering" />
+            <label for="College of Science and Engineering">College of Science and Engineering</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="School of Law" value="School of Law" />
+            <label for="School of Law">School of Law</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="School of Law" value="University Core" />
+            <label for="University Core">University Core</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-BySchool" id="All" value="All" checked />
+            <label for="All">All</label><br />
+        </div>
+
+
+
+
+        <!-- Search By Level  -->
+        <div class="col-xs-12 form-group form-check standardContent" id="SelectBox-ByLevel">
+            <legend for="SelectBox-ByLevel">
+                <h3>Course Level</h3>
+            </legend>
+
+            <input type="radio" class="form-check-input" name="SelectBox-ByLevel" id="Undergraduate" value="UG" />
+            <label for="Undergraduate">Undergraduate</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-ByLevel" id="Graduate" value="GR" />
+            <label for="Graduate">Graduate</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-ByLevel" id="Law" value="LW" />
+            <label for="Law">Law</label><br />
+
+            <input type="radio" class="form-check-input" name="SelectBox-ByLevel" id="All" value="All" checked />
+            <label for="All">All</label><br />
+        </div>
+
+
+
+
+        <!-- Search By LSAP Goals -->
+        <div class="col-xs-12 form-group form-check standardContent" id="SelectBox-ByLsap">
+            <legend for="SelectBox-ByLsap">
+                <h3>Laudato Si' Goal</h3>
+            </legend>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 1 Response to the Cry of the Earth" value="LSAP 1 Response to the Cry of the Earth" />
+            <label for="LSAP 1 Response to the Cry of the Earth"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-1.png" title="Response to the Cry of the Earth" alt="LSAP Goal 1 Response to the Cry of the Earth" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 2 Response to the Cry of the Poor" value="LSAP 2 Response to the Cry of the Poor" />
+            <label for="LSAP 2 Response to the Cry of the Poor"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-2.png" title="Response to the Cry of the Poor" alt="LSAP Goal 2 Response to the Cry of the Poor" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 3 Ecological Economics" value="LSAP 3 Ecological Economics" />
+            <label for="LSAP 3 Ecological Economics"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-3.png" title="Ecological Economics" alt="LSAP Goal 3 Ecological Economics" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 4 Adoption of Sustainable Lifestyles" value="LSAP 4 Adoption of Sustainable Lifestyles" />
+            <label for="LSAP 4 Adoption of Sustainable Lifestyles"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-4.png" title="Adoption of Sustainable Lifestyles" alt="LSAP Goal 4 Adoption of Sustainable Lifestyles" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 5 Ecological Education" value="LSAP 5 Ecological Education" />
+            <label for="LSAP 5 Ecological Education"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-5.png" title="Ecological Education" alt="LSAP Goal 5 Ecological Education" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 6 Ecological Spirituality" value="LSAP 6 Ecological Spirituality" />
+            <label for="LSAP 6 Ecological Spirituality"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-6.png" title="Ecological Spirituality" alt="LSAP Goal 6 Ecological Spirituality" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByLsap" id="LSAP 7 Community Resilience and Empowerment" value="LSAP 7 Community Resilience and Empowerment" />
+            <label for="LSAP 7 Community Resilience and Empowerment"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/LSAP-Goal-7.png" title="Community Resilience and Empowerment" alt="LSAP Goal 7 Community Resilience and Empowerment" loading="auto"></label>
+        </div>
+
+
+
+
+        <!-- Search By SDG Goals -->
+        <div class="col-xs-12 form-group form-check standardContent" id="SelectBox-ByGoal">
+            <legend for="SelectBox-ByGoal">
+                <h3>Sustainable Development Goal</h3>
+            </legend>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 1 No Poverty" value="SDG 1 No Poverty" />
+            <label for="SDG 1 No Poverty"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-1-No-Poverty.jpg" title="No Poverty" alt="1 No Poverty" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 2 Zero Hunger" value="SDG 2 Zero Hunger" />
+            <label for="SDG 2 Zero Hunger"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-2-Zero-Hunger.jpg" title="Zero Hunger" alt="2 Zero Hunger" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 3 Good Health" value="SDG 3 Good Health" />
+            <label for="SDG 3 Good Health"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-3-Good-Health.jpg" title="Good Health and Well-Being" alt="3 Good Health" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 4 Quality Education" value="SDG 4 Quality Education" />
+            <label for="SDG 4 Quality Education"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-4-Quality-Eduction.jpg" title="Quality Education" alt="4 Quality Education" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 5 Gender Equality" value="SDG 5 Gender Equality" />
+            <label for="SDG 5 Gender Equality"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-5-Gender-Equality.jpg" title="Gender Equality" alt="5 Gender Equality" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 6 Clean Water" value="SDG 6 Clean Water" />
+            <label for="SDG 6 Clean Water"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-6-Clean-Water.jpg" title="Clean Water and Sanitation" alt="6 Clean Water" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 7 Affordable and Clean Energy" value="SDG 7 Affordable and Clean Energy" />
+            <label for="SDG 7 Affordable and Clean Energy"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-7-Affordable.jpg" title="Affordable and Clean Energy" alt="7 Affordable and Clean Energy" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 8 Economic Growth" value="SDG 8 Economic Growth" />
+            <label for="SDG 8 Economic Growth"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-8-Economic-Growth.jpg" title="Decent Work and Economic Growth" alt="8 Economic Growth" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 9 Industry" value="SDG 9 Industry" />
+            <label for="SDG 9 Industry"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-9-Industry.jpg" title="Industry, Innovation and Infrastructure" alt="9 Industry" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 10 Reduced Inequalities" value="SDG 10 Reduced Inequalities" />
+            <label for="SDG 10 Reduced Inequalities"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-10-Reduced-Inequalities.jpg" title="Reduced Inequalities" alt="10 Reduced Inequalities" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 11 Sustainable Cities" value="SDG 11 Sustainable Cities" />
+            <label for="SDG 11 Sustainable Cities"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-11-Sustainable-Cities.jpg" title="Sustainable Cities and Communities" alt="11 Sustainable Cities" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 12 Responsible Consumption" value="SDG 12 Responsible Consumption" />
+            <label for="SDG 12 Responsible Consumption"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-12-Responsible-Consumption.jpg" title="Responsible Consumption and Production" alt="12 Responsible Consumption" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 13 Climate Action" value="SDG 13 Climate Action" />
+            <label for="SDG 13 Climate Action"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-13-Climate-Action.jpg" title="Climate Action" alt="13 Climate Action" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 14 Below Water" value="SDG 14 Below Water" />
+            <label for="SDG 14 Below Water"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-14-Below-Water.jpg" title="Life Below Water" alt="14 Below Water" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 15 On Land" value="SDG 15 On Land" />
+            <label for="SDG 15 On Land"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-15-On-Land.jpg" title="Life On Land" alt="15 On Land" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 16 Peace" value="SDG 16 Peace" />
+            <label for="SDG 16 Peace"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-16-Peace.jpg" title="Peace, Justice and Strong Institutions" alt="16 Peace" loading="auto"></label>
+
+            <input type="checkbox" class="form-check-input visually-hidden hidden" name="SelectBox-ByGoal" id="SDG 17 Partnerships" value="SDG 17 Partnerships" />
+            <label for="SDG 17 Partnerships"><img src="https://www.seattleu.edu/media/cejs/images/campus-sustainability/academics/SDG-17-Partnerships.jpg" title="Partnerships for the Goals" alt="17 Partnerships" loading="auto"></label>
+        </div>
+
+
+
+
+    </fieldset>
+</form>
