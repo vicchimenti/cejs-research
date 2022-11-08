@@ -1,0 +1,117 @@
+#filterField legend {
+    border-bottom: none;
+    margin: 1rem 0;
+}
+
+.courseCounter {
+    margin-bottom: 15px;
+    padding: 15px 15px 0 15px;
+}
+
+.courseCounter h3 {
+    display: inline;
+}
+
+.courseCounter span {
+    color: #333333;
+    display: inline;
+    font-family: "Roboto Slab", serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+div#filterField div#keystroke_filter_field label#keystrokeLabel {
+    display: none;
+}
+
+#articleFilter .form-check label {
+    display: inline;
+    overflow-wrap: anywhere;
+}
+
+#SelectBox-ByGoal label {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#SelectBox-ByLsap label {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#SelectBox-ByGoal :checked+label {
+    border-color: #ddd;
+}
+
+#SelectBox-ByLsap :checked+label {
+    border-color: #ddd;
+}
+
+#SelectBox-ByGoal label img {
+    height: 100px;
+    padding: 0;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    width: 100px;
+}
+
+#SelectBox-ByLsap label img {
+    height: 100px;
+    padding: 0;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    width: 100px;
+}
+
+#SelectBox-ByGoal :checked+label img {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+}
+
+#SelectBox-ByLsap :checked+label img {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+}
+
+#zoneA .noResultsToShow {
+    background: #e3e3da;
+    padding: 30px;
+    margin: 15px;
+}
+
+.hideByText,
+.hideByGoal,
+.hideByLsap,
+.hideByLevel,
+.hideBySchool,
+.hideResultsMessage {
+    display: none;
+}
+
+@media screen and (max-width: 991.98px) {
+    form#articleFilter {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #filterFieldWrapper.contentItem .standardContent .courseCounter {
+        margin-bottom: 15px;
+        padding: 15px 15px 0 15px;
+    }
+    .courseCounter span {
+        font-size: 1.8rem;
+    }
+}
