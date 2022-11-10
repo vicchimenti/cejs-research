@@ -41,7 +41,7 @@ $(function () {
             //   ***   Process and Parse Visible Items   ***   //
             $(function () {
                 let parseItemsToDisplay = function () {
-                    visibleItems = $('.cejscourseWrapper').not('.hideByText, .hideBySchool, .hideByLevel, .hideByGoal, .hideByLsap');
+                    visibleItems = $('.cejsResearchWrapper').not('.hideByText, .hideBySchool, .hideByFaculty, .hideByGoal, .hideByLsap');
                     
                     if (visibleItems.length == 0) {
                         $('.noResultsToShow').removeClass('hideResultsMessage');
