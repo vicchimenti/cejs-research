@@ -30,7 +30,7 @@ $(function () {
 
             function countCourses() {
 
-                let countedCourses = document.querySelectorAll('article.cejscourseWrapper:not( .hideByText, .hideBySchool, .hideByLevel, .hideByGoal, .hideByLsap)');
+                let countedCourses = document.querySelectorAll('article.cejsResearchWrapper:not( .hideByText, .hideBySchool, .hideByFaculty, .hideByGoal, .hideByLsap)');
                 let activeCourses = Array.from(countedCourses);
 
                 document.getElementById('course-count').textContent = activeCourses.length;
