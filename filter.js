@@ -63,7 +63,7 @@ $(function () {
                     let keyword = $(this).val().toLowerCase();
 
                     $(function () {
-                        $('.cejscourseWrapper').filter(function () {
+                        $('.cejsResearchWrapper').filter(function () {
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(keyword) > -1));
                         });
                     });
