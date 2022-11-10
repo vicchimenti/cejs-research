@@ -135,31 +135,7 @@ $(function () {
 
 
 
-            //   ***   Course Level Filter   ***   //
-            $(function () {
-                $('#SelectBox-ByLevel input:radio').change(function () {
-                    let typeKey = $(this).val();
-                    let viewAll = "All";
 
-                    if (typeKey != viewAll) {
-                        $('.academicLevel').filter(function (i, e) {
-                            var typeValue = $(this).text();
-
-                            if (typeValue.match(typeKey)) {
-                                $(this).parents('.cejsResearchWrapper').removeClass('hideByLevel');
-                            } else {
-                                $(this).parents('.cejsResearchWrapper').addClass('hideByLevel');
-                            }
-
-                        });
-                    } else {
-                        $('.cejsResearchWrapper').removeClass('hideByLevel');
-                    }
-
-                    parseItems.process();
-                    countCourses();
-                });
-            });
 
 
 
