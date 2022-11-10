@@ -108,7 +108,7 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
 .hideByText,
 .hideByGoal,
 .hideByLsap,
-.hideByLevel,
+.hideByFaculty,
 .hideBySchool,
 .hideResultsMessage {
     display: none;
