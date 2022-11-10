@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.21
+     *     @version 9.2.22
      */
 
 
@@ -441,8 +441,8 @@
           * 
           * */
          let dateSpan = (cejsrDict.sourceDate.content) ?
-         '<span class="card-text college">' + cejsrDict.sourceDate.content + '</span>' :
-         '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+         '<span class="card-text source-date">' + cejsrDict.sourceDate.content + '</span>' :
+         '<span class="card-text source-date visually-hidden hidden">No valid subject provided</span>';
  
  
 
