@@ -9,7 +9,7 @@
 *   jQuery
 *   This script fliter/searches the CEJS Course content items for matches
 *
-*   @version 3.14.9
+*   @version 4.0
 */
 
 
