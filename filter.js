@@ -9,7 +9,7 @@
 *   jQuery
 *   This script fliter/searches the CEJS Course content items for matches
 *
-*   @version 4.2
+*   @version 4.3
 */
 
 
@@ -157,6 +157,7 @@ $(function () {
                     }
 
                     parseItems.process();
+                    countCourses();
                 });
             });
 
