@@ -134,9 +134,31 @@ $(function () {
 
 
 
+            //   ***   Faculty Filter   ***   //
+            $(function() {
 
+                $('#SelectBox-ByFaculty').change(function() {
 
+                    let typeKey = $(this).val();
+                    if (typeKey) {
 
+                        $('p.fullName').filter(function(i, e) {
+                            var typeValue = $(this).text();
+                            if (typeValue.match(typeKey)) {
+                                $(this).parents('.cejsResearchWrapper').removeClass('hideByFaculty');
+                            } else {
+                                $(this).parents('.cejsResearchWrapper').addClass('hideByFaculty');
+                            }
+                        });
+
+                    } else {
+
+                        $('.cejsResearchWrapper').removeClass('hideByFaculty');
+                    }
+
+                    parseItems.process();
+                });
+            });
 
 
 
