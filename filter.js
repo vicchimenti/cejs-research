@@ -9,8 +9,36 @@
 *   jQuery
 *   This script fliter/searches the CEJS Course content items for matches
 *
-*   @version 4.0
+*   @version 4.1
 */
+
+
+
+/***
+ * Populate Dropdown Menu Select Option
+ * Currently using the Faculty Full Name class
+ * 
+ */
+ const listItemsNode = document.querySelectorAll('p.fullName');
+ let select = document.getElementById("SelectBox-ByFaculty");
+ let listItemsArr = []
+ for (const item of listItemsNode) {
+ 
+     listItemsArr.push(item.textContent);
+ 
+ }
+ 
+ const listSet = new Set(listItemsArr);
+ let optionArr = Array.from(listSet);
+ optionArr.sort();
+ for (let i = 0; i < optionArr.length; i++) {
+ 
+     let encodedStr = optionArr[i].replace(/&/g, "&");
+     let el = document.createElement("option");
+     el.textContent = encodedStr;
+     el.value = encodedStr;
+     select.appendChild(el);
+ }
 
 
 
