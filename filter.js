@@ -88,14 +88,14 @@ $(function () {
                             var typeValue = $(this).text();
 
                             if (typeValue.match(typeKey)) {
-                                $(this).parents('.cejscourseWrapper').removeClass('hideBySchool');
+                                $(this).parents('.cejsResearchWrapper').removeClass('hideBySchool');
                             } else {
-                                $(this).parents('.cejscourseWrapper').addClass('hideBySchool');
+                                $(this).parents('.cejsResearchWrapper').addClass('hideBySchool');
                             }
 
                         });
                     } else {
-                        $('.cejscourseWrapper').removeClass('hideBySchool');
+                        $('.cejsResearchWrapper').removeClass('hideBySchool');
                     }
 
                     parseItems.process();
@@ -118,14 +118,14 @@ $(function () {
                             var typeValue = $(this).text();
 
                             if (typeValue.match(typeKey)) {
-                                $(this).parents('.cejscourseWrapper').removeClass('hideByLevel');
+                                $(this).parents('.cejsResearchWrapper').removeClass('hideByLevel');
                             } else {
-                                $(this).parents('.cejscourseWrapper').addClass('hideByLevel');
+                                $(this).parents('.cejsResearchWrapper').addClass('hideByLevel');
                             }
 
                         });
                     } else {
-                        $('.cejscourseWrapper').removeClass('hideByLevel');
+                        $('.cejsResearchWrapper').removeClass('hideByLevel');
                     }
 
                     parseItems.process();
@@ -153,19 +153,19 @@ $(function () {
 
                             let elementValue = $(this).text() || null;
                             let sdgWheel = "UN Sustainable Development Goals";
-                            $(this).parents('.cejscourseWrapper').addClass('hideByGoal');
+                            $(this).parents('.cejsResearchWrapper').addClass('hideByGoal');
 
                             if (elementValue) {
                                 for (let index = 0; index < elementKeys.length; index++) {
 
                                     if (elementValue.includes(elementKeys[index]) || elementValue.includes(sdgWheel)) {
-                                        $(this).parents('.cejscourseWrapper').removeClass('hideByGoal');
+                                        $(this).parents('.cejsResearchWrapper').removeClass('hideByGoal');
                                     }
                                 }
                             }
                         });
                     } else {
-                        $('.cejscourseWrapper').removeClass('hideByGoal');
+                        $('.cejsResearchWrapper').removeClass('hideByGoal');
                     }
 
                     parseItems.process();
@@ -189,19 +189,19 @@ $(function () {
                     if (elementKeys[0] != "Any") {
                         $('ul.lsapIconDashboard').filter(function (i, e) {
                             let elementValue = $(this).text() || null;
-                            $(this).parents('.cejscourseWrapper').addClass('hideByLsap');
+                            $(this).parents('.cejsResearchWrapper').addClass('hideByLsap');
 
                             if (elementValue) {
 
                                 for (let index = 0; index < elementKeys.length; index++) {
                                     if (elementValue.includes(elementKeys[index])) {
-                                        $(this).parents('.cejscourseWrapper').removeClass('hideByLsap');
+                                        $(this).parents('.cejsResearchWrapper').removeClass('hideByLsap');
                                     }
                                 }
                             }
                         });
                     } else {
-                        $('.cejscourseWrapper').removeClass('hideByLsap');
+                        $('.cejsResearchWrapper').removeClass('hideByLsap');
                     }
 
                     parseItems.process();
