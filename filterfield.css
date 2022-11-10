@@ -29,6 +29,20 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
     overflow-wrap: anywhere;
 }
 
+#filterField label.form-label {
+    color: #aa0000;
+    font-family: "Roboto Slab", serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin: 15px 0 3px 0;
+    padding-bottom: 15px;
+}
+
+#filterField .form-group .form-control {
+    font-size: 1.6rem;
+    height: unset;
+}
+
 #SelectBox-ByGoal label {
     cursor: pointer;
     -webkit-touch-callout: none;
