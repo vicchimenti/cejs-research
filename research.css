@@ -99,14 +99,19 @@
     padding: 1rem 4rem;
 }
 
-.cejsResearchWrapper .typeDetails p.researchFormat {
+/* .cejsResearchWrapper .typeDetails p.researchFormat {
     font-weight: 600;
     margin-bottom: 1rem;
-}
+} */
 
-.cejsResearchWrapper .typeDetails p.description {
+.cejsResearchWrapper .typeDetails p {
     margin: 0;
 }
+
+
+/* .cejsResearchWrapper .typeDetails p.description {
+    margin: 0;
+} */
 
 
 
