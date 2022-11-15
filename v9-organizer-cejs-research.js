@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.25
+     *     @version 9.2.26
      */
 
 
@@ -430,9 +430,9 @@
                  openCardHeader,
                  titleLink,
                  subtitleString,
+                 fullNameString,
                  openDetails,
                  linkString,
-                 fullNameString,
                  closeDetails,
                  closeCardHeader,
                  openBodyWrapper,
