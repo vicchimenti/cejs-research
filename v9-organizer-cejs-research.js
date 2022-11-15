@@ -219,7 +219,6 @@
              researchType: getContentValues('<t4 type="content" name="Type" output="normal" modifiers="striptags,htmlentities" />'),
              publisher: getContentValues('<t4 type="content" name="Publisher" output="normal" modifiers="striptags,htmlentities" />'),
              journalLink: getContentValues('<t4 type="content" name="Journal Link" output="normal" modifiers="striptags,htmlentities" />'),
-            //  sourceDate: getContentValues('<t4 type="content" name="Source Date" output="normal" modifiers="striptags,htmlentities" />'),
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
@@ -295,17 +294,6 @@
 
 
         /***
-          *  check for source date
-          * 
-          * */
-        //  let dateString = (cejsrDict.sourceDate.content) ?
-        //     '<p class="card-text sourceDate">' + cejsrDict.sourceDate.content + '</p>' :
-        //     '<p class="card-text sourceDate visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
           *  check for description
           * 
           * */
@@ -323,54 +311,6 @@
          let citationString = (cejsrDict.citations.content) ?
             '<p class="card-text citations">' + cejsrDict.citations.content + '</p>' :
             '<p class="card-text citations visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-
-
-
-
-        /***
-          *  check for firstname
-          * 
-          * */
-        //  let firstNameString = (cejsrDict.firstName.content) ?
-        //     '<p class="card-text firstName">' + cejsrDict.firstName.content + '</p>' :
-        //     '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for last name
-          * 
-          * */
-        //  let lastNameString = (cejsrDict.lastName.content) ?
-        //     '<p class="card-text lastName">' + cejsrDict.lastName.content + '</p>' :
-        //     '<p class="card-text lastName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for subject college
-          * 
-          * */
-        //  let collegeString = (cejsrDict.college.content) ?
-        //     '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
-        //     '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for department
-          * 
-          * */
-        //  let departmentString = (cejsrDict.department.content) ?
-        //  '<p class="card-text department">' + cejsrDict.department.content + '</p>' :
-        //  '<p class="card-text department visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -397,23 +337,6 @@
  
  
  
-
-
-                                
-                                
-
-
-        /***
-          *  format summary
-          * 
-          * */
-        //  let summaryString =    (summarySubstring && cejsrDict.articleTitle.content) ?
-        //                         '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejsrDict.articleTitle.content + '">Read More</a></span></p>' :
-        //                         '<span class="card-text shortSummary visually-hidden hidden">No valid summary provided</span>';
-
- 
- 
- 
          /***
           *  check for subject Description
           * 
@@ -433,19 +356,8 @@
              '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
              '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
 
-
-
-
-        /***
-          *  check for subject college
-          * 
-          * */
-        //  let dateSpan = (cejsrDict.sourceDate.content) ?
-        //  '<span class="card-text source-date">' + cejsrDict.sourceDate.content + '</span>' :
-        //  '<span class="card-text source-date visually-hidden hidden">No valid subject provided</span>';
  
  
-
  
          /***
           *  define subtitle
