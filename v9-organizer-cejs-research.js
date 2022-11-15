@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.2.27
+     *     @version 9.2.28
      */
 
 
@@ -287,7 +287,7 @@
           * 
           * */
          let fullNameString = (cejsrDict.fullName.content) ?
-            '<p class="card-text fullName">' + cejsrDict.fullName.content + '</p>' :
+            '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
             '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
 
 
