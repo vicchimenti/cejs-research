@@ -434,7 +434,6 @@
                  closeCardHeader,
                  openBodyWrapper,
                  openType,
-                 formatString,
                  typeString,
                  descriptionString,
                  citationString,
