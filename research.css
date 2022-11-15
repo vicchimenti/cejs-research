@@ -56,12 +56,15 @@
     color: #AA0000;
 }
 
-.cejsResearchWrapper p.card-subtitle {
+.cejsResearchWrapper .card-header p {
     font-size: 1.6rem;
+    line-height: 1.5;
     margin-bottom: 0;
 }
 
-.cejsResearchWrapper .publishDetails {
+
+
+/* .cejsResearchWrapper .publishDetails {
     margin: 1.6rem 0;
 }
 
@@ -71,7 +74,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
+} */
 
 .cejsResearchWrapper .journalLink a {
     color: #088099;
