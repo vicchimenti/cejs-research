@@ -95,8 +95,8 @@
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
-    margin: 0 0 2rem 0;
-    padding: 1rem 4rem;
+    margin: 0 0 1.6rem 0;
+    padding: 0 4rem;
 }
 
 /* .cejsResearchWrapper .typeDetails p.researchFormat {
@@ -108,10 +108,9 @@
     margin: 0;
 }
 
-
-/* .cejsResearchWrapper .typeDetails p.description {
-    margin: 0;
-} */
+.cejsResearchWrapper .typeDetails p.description {
+    line-height: 1.8;
+}
 
 
 
