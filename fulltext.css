@@ -5,9 +5,9 @@
 
 */
 
-.organizerWrapper h2.organizerTitle {
+/* .organizerWrapper h2.organizerTitle {
     margin-bottom: 3rem;
-}
+} */
 
 .cejsResearchItem.card {
     /* background-color: #f7f7f7; */
@@ -17,10 +17,10 @@
     padding: 1rem;
 }
 
-.cejsResearchItem .card-header {
-    margin: 0 1.5rem 1.6rem 1.5rem;
+/* .cejsResearchItem .card-header {
+    margin: 0 0 1.6rem 0;
     padding-top: 1rem;
-}
+} */
 
 .cejsResearchItem .card-body {
     margin: 0 1.5rem;
@@ -31,30 +31,30 @@
     margin: 0;
 }
 
-.cejsResearchItem h3.card-title {
+.cejsResearchItem h1.card-title {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem;
     font-weight: 500;
     margin: 0;
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0 0; */
 }
 
-.cejsResearchItem h3.card-title a {
+/* .cejsResearchItem h3.card-title a {
     color: #AA0000;
 }
 
 .cejsResearchItem h3.card-title a:hover,
 .cejsResearchItem h3.card-title a:focus {
     color: #AA0000;
-}
+} */
 
 .cejsResearchItem p.card-subtitle {
     font-size: 1.6rem;
     margin-bottom: 0;
 }
 
-.cejsResearchItem .publishDetails {
+/* .cejsResearchItem .publishDetails {
     margin: 1.6rem 0;
 }
 
@@ -64,7 +64,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
+} */
 
 .cejsResearchItem .journalLink a {
     color: #088099;
