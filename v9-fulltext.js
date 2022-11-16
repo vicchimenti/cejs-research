@@ -6,7 +6,7 @@
      *
      *      Document will write client side once when the page loads
      *
-     *      @version 10.2
+     *      @version 10.3
      */
 
 
@@ -218,8 +218,8 @@
              journalLink: getContentValues('<t4 type="content" name="Journal Link" output="normal" modifiers="striptags,htmlentities" />'),
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
-             fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
-             contentId: getContentValues('<t4 type="meta" meta="content_id" />')
+             contentId: getContentValues('<t4 type="meta" meta="content_id" />'),
+             anchorLink: getContentValues('<t4 type="meta" meta="html_anchor" />')
  
          };
  
@@ -250,9 +250,9 @@
           *  define wrapper
           * 
           * */
-         let beginningHTML =    (cejsrDict.articleTitle.content) ?
-                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
-                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
+         let beginningHTML =    (cejsrDict.articleTitle.content && cejsrDict.anchorLink.content) ?
+                                '<article class="cejsResearchItem card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '"><span>' + cejsrDict.anchorLink.content + '</span>' :
+                                '<article class="cejsResearchItem card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
  
   
@@ -261,9 +261,9 @@
           *  check for fulltext content
           * 
           * */
-         let titleLink = (cejsrDict.articleTitle.content && cejsrDict.fullTextLink.content) ?
-             '<h3 class="card-title border-0"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full details: ' + cejsrDict.articleTitle.content + '">' + cejsrDict.articleTitle.content + '</a></h3>' :
-             '<h3 class="card-title border-0">' + cejsrDict.contentName.content + '</h3>';
+         let titleLink = (cejsrDict.articleTitle.content) ?
+             '<h1 id="pageTitle" class="card-title border-0">' + cejsrDict.articleTitle.content + '</h1>' :
+             '<h1 class="card-title border-0">' + cejsrDict.contentName.content + '</h1>';
 
 
 
