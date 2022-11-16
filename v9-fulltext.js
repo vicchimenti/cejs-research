@@ -216,7 +216,6 @@
              researchType: getContentValues('<t4 type="content" name="Type" output="normal" modifiers="striptags,htmlentities" />'),
              publisher: getContentValues('<t4 type="content" name="Publisher" output="normal" modifiers="striptags,htmlentities" />'),
              journalLink: getContentValues('<t4 type="content" name="Journal Link" output="normal" modifiers="striptags,htmlentities" />'),
-             sourceDate: getContentValues('<t4 type="content" name="Source Date" output="normal" modifiers="striptags,htmlentities" />'),
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
@@ -236,8 +235,8 @@
          let closeCardHeader = '</div>';
          let openBodyWrapper = '<div class="articleSummary card-body">';
          let closeBodyWrapper = '</div>';
-         let openDetails = '<div class="publishDetails">';
-         let closeDetails = '</div>';
+        //  let openDetails = '<div class="publishDetails">';
+        //  let closeDetails = '</div>';
          let openType = '<div class="typeDetails">';
          let closeType = '</div>';
          let listOfIcons = '<ul class="iconDashboard list-group list-group-horizontal hidden visually-hidden">No icons provided</ul>';
@@ -252,8 +251,8 @@
           * 
           * */
          let beginningHTML =    (cejsrDict.articleTitle.content) ?
-                                '<article class="cejsResearchItem card standardContent" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
-                                '<article class="cejsResearchItem card standardContent" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
+                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.articleTitle.content + '">' :
+                                '<article class="cejsResearchWrapper card shadow border-0 radius-0 mb-3" id="cejsr' + cejsrDict.contentId.content + '" role="contentinfo" aria-label="' + cejsrDict.contentName.content + '">';
 
  
   
@@ -285,19 +284,8 @@
           * 
           * */
          let fullNameString = (cejsrDict.fullName.content) ?
-            '<p class="card-text fullName">' + cejsrDict.fullName.content + '</p>' :
+            '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
             '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for source date
-          * 
-          * */
-        //  let dateString = (cejsrDict.sourceDate.content) ?
-        //     '<p class="card-text sourceDate">' + cejsrDict.sourceDate.content + '</p>' :
-        //     '<p class="card-text sourceDate visually-hidden hidden">No valid subject provided</p>';
 
 
 
@@ -324,54 +312,6 @@
 
 
 
-
-
-
-
-        /***
-          *  check for firstname
-          * 
-          * */
-        //  let firstNameString = (cejsrDict.firstName.content) ?
-        //     '<p class="card-text firstName">' + cejsrDict.firstName.content + '</p>' :
-        //     '<p class="card-text firstName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for last name
-          * 
-          * */
-        //  let lastNameString = (cejsrDict.lastName.content) ?
-        //     '<p class="card-text lastName">' + cejsrDict.lastName.content + '</p>' :
-        //     '<p class="card-text lastName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for subject college
-          * 
-          * */
-        //  let collegeString = (cejsrDict.college.content) ?
-        //     '<p class="card-text college">' + cejsrDict.college.content + '</p>' :
-        //     '<p class="card-text college visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
-        /***
-          *  check for department
-          * 
-          * */
-        //  let departmentString = (cejsrDict.department.content) ?
-        //  '<p class="card-text department">' + cejsrDict.department.content + '</p>' :
-        //  '<p class="card-text department visually-hidden hidden">No valid subject provided</p>';
-
-
-
-
         /***
           *  check for research format 
           * 
@@ -394,23 +334,6 @@
  
  
  
-
-
-                                
-                                
-
-
-        /***
-          *  format summary
-          * 
-          * */
-        //  let summaryString =    (summarySubstring && cejsrDict.articleTitle.content) ?
-        //                         '<p class="card-text shortSummary">' + summarySubstring + '... <span class="readMore"><a href="' + cejsrDict.fullTextLink.content + '" class="card-link" title="See the full course description: ' + cejsrDict.articleTitle.content + '">Read More</a></span></p>' :
-        //                         '<span class="card-text shortSummary visually-hidden hidden">No valid summary provided</span>';
-
- 
- 
- 
          /***
           *  check for subject Description
           * 
@@ -430,38 +353,19 @@
              '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
              '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
 
-
-
-
-        /***
-          *  check for subject college
-          * 
-          * */
-         let dateSpan = (cejsrDict.sourceDate.content) ?
-         '<span class="card-text college">' + cejsrDict.sourceDate.content + '</span>' :
-         '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
  
  
-
  
          /***
           *  define subtitle
           * 
           * */
-         let subtitleString = (cejsrDict.department.content && cejsrDict.college.content && cejsrDict.sourceDate.content) ?
-             '<p class="card-subtitle">' + departmentSpan + ' | ' + collegeSpan + ' | ' + dateSpan + '</p>' :
-             (cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+         let subtitleString = (cejsrDict.department.content && cejsrDict.college.content) ?
              '<p class="card-subtitle">' + departmentSpan + ' | ' + collegeSpan + '</p>' :
-             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + departmentSpan + ' | ' + dateSpan + '</p>' :
-             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + collegeSpan + ' | ' + dateSpan + '</p>' :
-             (!cejsrDict.subjectDescription.content && !cejsrDict.college.content && cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + dateSpan + '</p>' :
-             (!cejsrDict.subjectDescription.content && cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
-             '<p class="card-subtitle">' + collegeSpan + '</p>' :
-             (cejsrDict.subjectDescription.content && !cejsrDict.college.content && !cejsrDict.academicLevel.content) ?
+             (cejsrDict.department.content && !cejsrDict.college.content) ?
              '<p class="card-subtitle">' + departmentSpan + '</p>' :
+             (!cejsrDict.department.content && cejsrDict.college.content) ?
+             '<p class="card-subtitle">' + collegeSpan + '</p>' :
              '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
  
  
@@ -523,17 +427,14 @@
                  openCardHeader,
                  titleLink,
                  subtitleString,
-                 openDetails,
-                 linkString,
                  fullNameString,
-                 closeDetails,
                  closeCardHeader,
                  openBodyWrapper,
                  openType,
-                 formatString,
                  typeString,
                  descriptionString,
                  citationString,
+                 linkString,
                  closeType,
                  listOfLsapIcons,
                  listOfIcons,
@@ -548,3 +449,4 @@
      } catch (err) {
          document.write(err.message);
      }
+
