@@ -13,8 +13,8 @@
     /* background-color: #f7f7f7; */
     border: none;
     /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important; */
-    margin: 1rem;
-    padding: 1rem;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 /* .cejsResearchItem .card-header {
@@ -31,7 +31,7 @@
     margin: 0;
 }
 
-.cejsResearchItem h1#pageTitle {
+#pageContentWrapper .cejsResearchItem .card-header h1#pageTitle {
     color: #AA0000;
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -179,6 +179,13 @@
     display: block;
     height: 3px;
     margin-bottom: 20px;
+}
+
+
+.cejsResearchItem.card {
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 
