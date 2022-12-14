@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.3.2
+     *     @version 9.3.3
      */
 
 
@@ -323,8 +323,8 @@
           * 
           * */
          let formatString = (cejsrDict.researchFormat.content) ?
-         '<p class="card-text researchFormat">' + cejsrDict.researchFormat.content + '</p>' :
-         '<p class="card-text researchFormat visually-hidden hidden">No valid format provided</p>';
+         '<span class="card-text researchFormat hidden visually-hidden d-none">' + cejsrDict.researchFormat.content + '</span>' :
+         '<span class="card-text researchFormat hidden visually-hidden d-none">No valid format provided</span>';
 
 
 
@@ -444,6 +444,7 @@
                  closeType,
                  listOfLsapIcons,
                  listOfIcons,
+                 formatString,
                  closeBodyWrapper,
                  endingHTML
              ]
