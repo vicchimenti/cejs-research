@@ -62,12 +62,6 @@
     margin-bottom: 0;
 }
 
-.cejsResearchWrapper .card-header .fullName {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 0;
-}
-
 .cejsResearchWrapper .card-header .fullName a {
     color: #088099;
     text-decoration: none;
