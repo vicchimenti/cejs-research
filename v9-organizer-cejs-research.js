@@ -9,7 +9,7 @@
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.3.1
+     *     @version 9.3.2
      */
 
 
@@ -288,7 +288,7 @@
           * 
           * */
          let fullNameString = (cejsrDict.fullName.content && cejsrDict.bioLink.content) ?
-            '<p class="card-text fullName"><strong><a href="' + cejsrDict.bioLink.content + '" class="card-link" title="Visit the bio of ' + cejsrDict.fullName.content + '">' + cejsrDict.fullName.content + '</a></strong></p>' :
+            '<p class="card-text fullName"><strong><a href="' + cejsrDict.bioLink.content + '" class="card-link" title="Visit the bio of ' + cejsrDict.fullName.content + '" target="_blank">' + cejsrDict.fullName.content + '</a></strong></p>' :
             (cejsrDict.fullName.content && !cejsrDict.bioLink.content) ?
             '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
             '<p class="card-text fullName visually-hidden hidden">No valid name provided</p>';
