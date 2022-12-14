@@ -1,15 +1,15 @@
     /***
      *     @author Victor Chimenti, MSCS
      *     @file v9-organizer-cejs-research.js
-     *          v9/organizer/cejs/research
-     *          id:5945
+     *           v9/organizer/cejs/research
+     *           id:5945
      *
      *     This content type will work in conjunction with the Organizer and each item
      *     will contain one announcement.
      *
      *     Document will write once when the page loads
      *
-     *     @version 9.3.0
+     *     @version 9.3.1
      */
 
 
@@ -287,9 +287,11 @@
           *  check for fullname
           * 
           * */
-         let fullNameString = (cejsrDict.fullName.content) ?
+         let fullNameString = (cejsrDict.fullName.content && cejsrDict.bioLink.content) ?
+            '<p class="card-text fullName"><strong><a href="' + cejsrDict.bioLink.content + '" class="card-link" title="Visit the bio of ' + cejsrDict.fullName.content + '">' + cejsrDict.fullName.content + '</a></strong></p>' :
+            (cejsrDict.fullName.content && !cejsrDict.bioLink.content) ?
             '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
-            '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
+            '<p class="card-text fullName visually-hidden hidden">No valid name provided</p>';
 
 
 
@@ -300,7 +302,7 @@
           * */
          let descriptionString = (cejsrDict.description.content) ?
             '<p class="card-text description"><em>' + cejsrDict.description.content + '</em></p>' :
-            '<p class="card-text description visually-hidden hidden">No valid subject provided</p>';
+            '<p class="card-text description visually-hidden hidden">No valid description provided</p>';
 
 
 
@@ -311,7 +313,7 @@
           * */
          let citationString = (cejsrDict.citations.content) ?
             '<p class="card-text citations">' + cejsrDict.citations.content + '</p>' :
-            '<p class="card-text citations visually-hidden hidden">No valid subject provided</p>';
+            '<p class="card-text citations visually-hidden hidden">No valid citation provided</p>';
 
 
 
@@ -322,7 +324,7 @@
           * */
          let formatString = (cejsrDict.researchFormat.content) ?
          '<p class="card-text researchFormat">' + cejsrDict.researchFormat.content + '</p>' :
-         '<p class="card-text researchFormat visually-hidden hidden">No valid subject provided</p>';
+         '<p class="card-text researchFormat visually-hidden hidden">No valid format provided</p>';
 
 
 
@@ -333,7 +335,7 @@
           * */
          let typeString = (cejsrDict.researchType.content) ?
             '<span class="card-text text-muted researchType">' + cejsrDict.researchType.content + '</span>' :
-            '<span class="card-text researchType visually-hidden hidden">No valid subject provided</span>';
+            '<span class="card-text researchType visually-hidden hidden">No valid type provided</span>';
           
  
  
@@ -344,7 +346,7 @@
           * */
          let departmentSpan = (cejsrDict.department.content) ?
              '<span class="card-text department"><em>' + cejsrDict.department.content + '</em></span>' :
-             '<span class="card-text department visually-hidden hidden">No valid subject provided</span>';
+             '<span class="card-text department visually-hidden hidden">No valid department provided</span>';
  
  
  
@@ -355,7 +357,7 @@
           * */
          let collegeSpan = (cejsrDict.college.content) ?
              '<span class="card-text college">' + cejsrDict.college.content + '</span>' :
-             '<span class="card-text college visually-hidden hidden">No valid subject provided</span>';
+             '<span class="card-text college visually-hidden hidden">No valid college provided</span>';
 
  
  
