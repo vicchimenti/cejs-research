@@ -105,6 +105,17 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
 }
 
 
+@media screen and (min-width: 1400px) and (max-width: 1499.98px) {
+
+    #filterField #SelectBox-BySchool label {
+        font-size: 1.4rem;
+    }
+
+    #filterField #SelectBox-BySchool label.form-label {
+        font-size: 2.1rem;
+    }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
 
     #filterField #SelectBox-BySchool label {
@@ -125,9 +136,6 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
         width: auto;
     }
 }
-
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {}
-
 
 @media screen and (max-width: 991.98px) {
     form#articleFilter {
