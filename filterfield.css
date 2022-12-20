@@ -114,6 +114,27 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
     display: none;
 }
 
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+
+    #filterField .form-group .form-control {
+        font-size: 1.1rem;
+    }
+
+    #SelectBox-ByGoal label img {
+        height: 75px;
+        width: auto;
+    }
+
+    #SelectBox-ByLsap label img {
+        height: 75px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+
 @media screen and (max-width: 991.98px) {
     form#articleFilter {
         margin-top: 1rem;
