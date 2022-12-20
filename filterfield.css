@@ -107,7 +107,7 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
 
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
 
-    #filterField .form-group .form-control {
+    #filterField #SelectBox-BySchool label {
         font-size: 1.1rem;
     }
 
