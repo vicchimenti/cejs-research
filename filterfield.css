@@ -111,6 +111,10 @@ div#filterField div#keystroke_filter_field label#keystrokeLabel {
         font-size: 1.1rem;
     }
 
+    #filterField #SelectBox-BySchool label.form-label {
+        font-size: 2.1rem;
+    }
+
     #SelectBox-ByGoal label img {
         height: 75px;
         width: auto;
