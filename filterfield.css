@@ -1,8 +1,3 @@
-/* #filterField legend {
-    border-bottom: none;
-    margin: 1rem 0;
-} */
-
 .courseCounter {
     margin-bottom: 15px;
     padding: 15px 15px 0 15px;
@@ -23,11 +18,6 @@
 div#filterField div#keystroke_filter_field label#keystrokeLabel {
     display: none;
 }
-
-/* #articleFilter .form-check label {
-    display: inline;
-    overflow-wrap: anywhere;
-} */
 
 #filterField label.form-label {
     color: #aa0000;
