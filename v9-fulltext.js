@@ -236,8 +236,6 @@
          let closeCardHeader = '</div>';
          let openBodyWrapper = '<div class="articleSummary card-body">';
          let closeBodyWrapper = '</div>';
-        //  let openDetails = '<div class="publishDetails">';
-        //  let closeDetails = '</div>';
          let openType = '<div class="typeDetails">';
          let closeType = '</div>';
          let listOfIcons = '<ul class="iconDashboard list-group list-group-horizontal hidden visually-hidden">No icons provided</ul>';
