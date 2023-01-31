@@ -216,6 +216,7 @@
              researchType: getContentValues('<t4 type="content" name="Type" output="normal" modifiers="striptags,htmlentities" />'),
              publisher: getContentValues('<t4 type="content" name="Publisher" output="normal" modifiers="striptags,htmlentities" />'),
              journalLink: getContentValues('<t4 type="content" name="Journal Link" output="normal" modifiers="striptags,htmlentities" />'),
+             bioLink: getContentValues('<t4 type="content" name="Faculty Bio Link" output="normal" modifiers="striptags,htmlentities" />'),
              icons: getContentValues('<t4 type="content" name="SDG Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              lsapIcons: getContentValues('<t4 type="content" name="Laudato Si Media IDs" output="normal" modifiers="striptags,htmlentities" />'),
              contentId: getContentValues('<t4 type="meta" meta="content_id" />'),
