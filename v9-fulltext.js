@@ -282,16 +282,6 @@
           *  check for fullname
           * 
           * */
-        //  let fullNameString = (cejsrDict.fullName.content) ?
-        //     '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
-        //     '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
-
-
-
-        /***
-          *  check for fullname
-          * 
-          * */
          let fullNameString = (cejsrDict.fullName.content && cejsrDict.bioLink.content) ?
          '<p class="card-text fullName"><strong><a href="' + cejsrDict.bioLink.content + '" class="card-link" title="Visit the bio of ' + cejsrDict.fullName.content + '" target="_blank">' + cejsrDict.fullName.content + '</a></strong></p>' :
          (cejsrDict.fullName.content && !cejsrDict.bioLink.content) ?
