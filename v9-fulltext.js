@@ -317,9 +317,9 @@
           *  check for research format 
           * 
           * */
-         let formatString = (cejsrDict.researchFormat.content) ?
-         '<p class="card-text researchFormat">' + cejsrDict.researchFormat.content + '</p>' :
-         '<p class="card-text researchFormat visually-hidden hidden">No valid subject provided</p>';
+        //  let formatString = (cejsrDict.researchFormat.content) ?
+        //  '<p class="card-text researchFormat">' + cejsrDict.researchFormat.content + '</p>' :
+        //  '<p class="card-text researchFormat visually-hidden hidden">No valid subject provided</p>';
 
 
 
