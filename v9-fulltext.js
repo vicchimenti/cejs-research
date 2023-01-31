@@ -284,9 +284,9 @@
           *  check for fullname
           * 
           * */
-         let fullNameString = (cejsrDict.fullName.content) ?
-            '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
-            '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
+        //  let fullNameString = (cejsrDict.fullName.content) ?
+        //     '<p class="card-text fullName"><strong>' + cejsrDict.fullName.content + '</strong></p>' :
+        //     '<p class="card-text fullName visually-hidden hidden">No valid subject provided</p>';
 
 
 
