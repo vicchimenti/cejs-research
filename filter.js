@@ -106,23 +106,24 @@ $(function () {
 
 
             //   ***   School Filter   ***   //
-            $(function () {
-                $('#SelectBox-BySchool input:radio').change(function () {
+            $(function() {
+
+                $('#SelectBox-BySchool').change(function() {
+
                     let typeKey = $(this).val();
-                    let viewAll = "All";
+                    if (typeKey) {
 
-                    if (typeKey != viewAll) {
-                        $('.college').filter(function (i, e) {
+                        $('college').filter(function(i, e) {
                             var typeValue = $(this).text();
-
                             if (typeValue.match(typeKey)) {
                                 $(this).parents('.cejsResearchWrapper').removeClass('hideBySchool');
                             } else {
                                 $(this).parents('.cejsResearchWrapper').addClass('hideBySchool');
                             }
-
                         });
+
                     } else {
+
                         $('.cejsResearchWrapper').removeClass('hideBySchool');
                     }
 
@@ -130,6 +131,30 @@ $(function () {
                     countCourses();
                 });
             });
+            // $(function () {
+            //     $('#SelectBox-BySchool input:radio').change(function () {
+            //         let typeKey = $(this).val();
+            //         let viewAll = "All";
+
+            //         if (typeKey != viewAll) {
+            //             $('.college').filter(function (i, e) {
+            //                 var typeValue = $(this).text();
+
+            //                 if (typeValue.match(typeKey)) {
+            //                     $(this).parents('.cejsResearchWrapper').removeClass('hideBySchool');
+            //                 } else {
+            //                     $(this).parents('.cejsResearchWrapper').addClass('hideBySchool');
+            //                 }
+
+            //             });
+            //         } else {
+            //             $('.cejsResearchWrapper').removeClass('hideBySchool');
+            //         }
+
+            //         parseItems.process();
+            //         countCourses();
+            //     });
+            // });
 
 
 
