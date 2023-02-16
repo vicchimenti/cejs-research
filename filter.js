@@ -113,7 +113,7 @@ $(function () {
                     let typeKey = $(this).val();
                     if (typeKey) {
 
-                        $('college').filter(function(i, e) {
+                        $('.college').filter(function(i, e) {
                             var typeValue = $(this).text();
                             if (typeValue.match(typeKey)) {
                                 $(this).parents('.cejsResearchWrapper').removeClass('hideBySchool');
