@@ -9,7 +9,7 @@
 *   jQuery
 *   This script fliter/searches the CEJS Course content items for matches
 *
-*   @version 4.3
+*   @version 4.3.1
 */
 
 
@@ -131,7 +131,7 @@ $(function () {
                     countCourses();
                 });
             });
-            
+
             // $(function () {
             //     $('#SelectBox-BySchool input:radio').change(function () {
             //         let typeKey = $(this).val();
