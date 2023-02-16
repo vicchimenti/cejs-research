@@ -131,6 +131,7 @@ $(function () {
                     countCourses();
                 });
             });
+            
             // $(function () {
             //     $('#SelectBox-BySchool input:radio').change(function () {
             //         let typeKey = $(this).val();
