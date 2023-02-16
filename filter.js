@@ -9,7 +9,7 @@
 *   jQuery
 *   This script fliter/searches the CEJS Course content items for matches
 *
-*   @version 4.3.1
+*   @version 4.3.2
 */
 
 
@@ -131,31 +131,6 @@ $(function () {
                     countCourses();
                 });
             });
-
-            // $(function () {
-            //     $('#SelectBox-BySchool input:radio').change(function () {
-            //         let typeKey = $(this).val();
-            //         let viewAll = "All";
-
-            //         if (typeKey != viewAll) {
-            //             $('.college').filter(function (i, e) {
-            //                 var typeValue = $(this).text();
-
-            //                 if (typeValue.match(typeKey)) {
-            //                     $(this).parents('.cejsResearchWrapper').removeClass('hideBySchool');
-            //                 } else {
-            //                     $(this).parents('.cejsResearchWrapper').addClass('hideBySchool');
-            //                 }
-
-            //             });
-            //         } else {
-            //             $('.cejsResearchWrapper').removeClass('hideBySchool');
-            //         }
-
-            //         parseItems.process();
-            //         countCourses();
-            //     });
-            // });
 
 
 
