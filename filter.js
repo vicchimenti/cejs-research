@@ -3,14 +3,14 @@
 
 
 /***
-*   @author Victor Chimenti, MSCS
-*   @file filter.js
-*
-*   jQuery
-*   This script fliter/searches the CEJS Course content items for matches
-*
-*   @version 4.3.2
-*/
+ *   @author Victor Chimenti, MSCS
+ *   @file filter.js
+ *
+ *   jQuery
+ *   This script fliter/searches the CEJS Course content items for matches
+ *
+ *   @version 4.3.3
+ */
 
 
 
@@ -19,42 +19,42 @@
  * Currently using the Faculty Full Name class
  * 
  */
- const listItemsNode = document.querySelectorAll('p.fullName');
- let select = document.getElementById("SelectBox-ByFaculty");
- let listItemsArr = []
- for (const item of listItemsNode) {
- 
-     listItemsArr.push(item.textContent);
- 
- }
- 
- const listSet = new Set(listItemsArr);
- let optionArr = Array.from(listSet);
- optionArr.sort();
- for (let i = 0; i < optionArr.length; i++) {
- 
-     let encodedStr = optionArr[i].replace(/&/g, "&");
-     let el = document.createElement("option");
-     el.textContent = encodedStr;
-     el.value = encodedStr;
-     select.appendChild(el);
- }
+const listItemsNode = document.querySelectorAll('p.fullName');
+let select = document.getElementById("SelectBox-ByFaculty");
+let listItemsArr = []
+for (const item of listItemsNode) {
+
+    listItemsArr.push(item.textContent);
+
+}
+
+const listSet = new Set(listItemsArr);
+let optionArr = Array.from(listSet);
+optionArr.sort();
+for (let i = 0; i < optionArr.length; i++) {
+
+    let encodedStr = optionArr[i].replace(/&/g, "&");
+    let el = document.createElement("option");
+    el.textContent = encodedStr;
+    el.value = encodedStr;
+    select.appendChild(el);
+}
 
 
 
 
 
 
-$(function () {
+$(function() {
 
-    $(window).load(function () {
-        setTimeout(function () {
+    $(window).load(function() {
+        setTimeout(function() {
 
             let visibleItems = [];
             let parseItems = {};
 
 
-            
+
 
             function countCourses() {
 
@@ -67,10 +67,10 @@ $(function () {
 
 
             //   ***   Process and Parse Visible Items   ***   //
-            $(function () {
-                let parseItemsToDisplay = function () {
+            $(function() {
+                let parseItemsToDisplay = function() {
                     visibleItems = $('.cejsResearchWrapper').not('.hideByText, .hideBySchool, .hideByFaculty, .hideByGoal, .hideByLsap');
-                    
+
                     if (visibleItems.length == 0) {
                         $('.noResultsToShow').removeClass('hideResultsMessage');
                     } else {
@@ -79,19 +79,19 @@ $(function () {
                 };
 
                 parseItems.process = parseItemsToDisplay;
-                
+
             });
 
 
 
 
             //   ***   Keyword Search   ***   //
-            $(function () {
-                $('#keystroke_filter').on('keyup', function () {
+            $(function() {
+                $('#keystroke_filter').on('keyup', function() {
                     let keyword = $(this).val().toLowerCase();
 
-                    $(function () {
-                        $('.cejsResearchWrapper').filter(function () {
+                    $(function() {
+                        $('.cejsResearchWrapper').filter(function() {
                             $(this).toggleClass('hideByText', !($(this).text().toLowerCase().indexOf(keyword) > -1));
                         });
                     });
@@ -107,7 +107,6 @@ $(function () {
 
             //   ***   School Filter   ***   //
             $(function() {
-
                 $('#SelectBox-BySchool').change(function() {
 
                     let typeKey = $(this).val();
@@ -137,7 +136,6 @@ $(function () {
 
             //   ***   Faculty Filter   ***   //
             $(function() {
-
                 $('#SelectBox-ByFaculty').change(function() {
 
                     let typeKey = $(this).val();
@@ -166,18 +164,18 @@ $(function () {
 
 
             //   ***  SDG Goals Multi-Select Checkbox Filter    ***   //
-            $(function () {
-                $('#SelectBox-ByGoal').change(function () {
-                    
+            $(function() {
+                $('#SelectBox-ByGoal').change(function() {
+
                     let elementKeys = [];
                     elementKeys[0] = 'Any';
 
-                    $('input[name=SelectBox-ByGoal]:checked').each(function (item) {
+                    $('input[name=SelectBox-ByGoal]:checked').each(function(item) {
                         elementKeys[item] = $(this).val();
                     });
 
                     if (elementKeys[0] != "Any") {
-                        $('ul.iconDashboard').filter(function (i, e) {
+                        $('ul.iconDashboard').filter(function(i, e) {
 
                             let elementValue = $(this).text() || null;
                             let sdgWheel = "UN Sustainable Development Goals";
@@ -206,16 +204,16 @@ $(function () {
 
 
             //   ***  LSAP Goals Multi-Select Checkbox Filter    ***   //
-            $(function () {
-                $('#SelectBox-ByLsap').change(function () {
+            $(function() {
+                $('#SelectBox-ByLsap').change(function() {
                     let elementKeys = [];
                     elementKeys[0] = 'Any';
-                    $('input[name=SelectBox-ByLsap]:checked').each(function (item) {
+                    $('input[name=SelectBox-ByLsap]:checked').each(function(item) {
                         elementKeys[item] = $(this).val();
                     });
 
                     if (elementKeys[0] != "Any") {
-                        $('ul.lsapIconDashboard').filter(function (i, e) {
+                        $('ul.lsapIconDashboard').filter(function(i, e) {
                             let elementValue = $(this).text() || null;
                             $(this).parents('.cejsResearchWrapper').addClass('hideByLsap');
 
@@ -236,7 +234,7 @@ $(function () {
                     countCourses();
                 });
             });
-            
+
 
 
 
