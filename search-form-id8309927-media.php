@@ -93,7 +93,7 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
             <?php if (!empty($search)) : ?>
                 <div class="cell">
                     <fieldset>
-                        <legend>Laudato Si' Goal</legend>
+                        <legend>Laudato Si' Goal - Related Courses</legend>
                         <div class="fieldset-wrapper">
                             <?php $i = 0; ?>
                             <?php foreach ($search as $item) : ?>
@@ -124,7 +124,7 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
             <?php if (!empty($search)) : ?>
                 <div class="cell sdg">
                     <fieldset>
-                        <legend>Sustainable Development Goal</legend>
+                        <legend>Sustainable Development Goal - Related Courses</legend>
                         <div class="fieldset-wrapper">
                             <?php $i = 0; ?>
                             <?php foreach ($search as $item) : ?>
