@@ -3,6 +3,9 @@ $genericFacet = \T4\PHPSearchLibrary\FacetFactory::getInstance('GenericFacet', $
 $filters = $queryHandler->getQueryValuesForPrint();
 $categoryFilters = array('school','courseLevel','faculty', 'icons', 'lsapIcons');
 
+// search-form.php
+// Media ID: 8309927
+
 // Get details of icons from JSON string and decode JSON string to associative array
 // This is used to get the labels and images for the icons
 $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JSON" id="1054" />', true);
