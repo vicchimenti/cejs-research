@@ -185,7 +185,7 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
                 </a>
               </div>
               <?php endif; ?>    
-              <div class="search-count"><p>Showing <strong><?php echo count($results) ?> articles</strong> of <?php echo $totalResults; ?></p></div>
+              <div class="search-count"><p>Showing <strong><?php echo count($results) ?> items</strong> of <?php echo $totalResults; ?></p></div>
             </div>          
         </div>
     </div>
