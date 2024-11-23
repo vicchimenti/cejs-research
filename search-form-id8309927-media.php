@@ -73,7 +73,7 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
                 <div class="cell medium-6">
                     <label for="<?php echo $element; ?>" class="label-text">Faculty</label>
                     <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="T4_persona">
-                        <option value="">All Faculties</option>
+                        <option value="">All Faculty</option>
                         <?php foreach ($search as $item) : ?>
                             <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['label']; ?></option>
                         <?php endforeach; ?>
