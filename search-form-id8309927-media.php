@@ -6,7 +6,6 @@ $categoryFilters = array('school','courseLevel','faculty', 'icons', 'lsapIcons')
 // Get details of icons from JSON string and decode JSON string to associative array
 // This is used to get the labels and images for the icons
 $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JSON" id="1054" />', true);
-
 ?>
 <section class="su-listing">
     <div id="searchoptionsGeneric" role="search" class="su-listing--form-wrapper bg--dark global-padding--8x su-listing--form-wrapper-cejs" data-t4-ajax-group="courseSearch">
@@ -156,32 +155,23 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
                 <div id="event-filters" class="active-filters--list" >
                     <span>Active filters:</span>
                     <?php  $i = 0; if ($filters !== null) : ?>
-                        <ul class="no-bullet">
-                            <?php
-                            foreach ($categoryFilters as $key) {
-                                if (isset($filters[$key]) && is_array($filters[$key])) :
-                                    foreach ($filters[$key] as $value) : ?>
-                                        <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>">
-                                            <?php echo isset($iconData[$value]) ? $iconData[$value]['label'] : $value ?>
-                                            <span class="remove"><i class="fa fa-times"></i></span>
-                                        </li>
-                                    <?php
-                                    endforeach;
-                                elseif (isset($filters[$key])) :
-                                    $value = $filters[$key]; ?>
-                                    <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>">
-                                        <?php echo isset($iconData[$value]) ? $iconData[$value]['label'] : $value ?>
-                                        <span class="remove"><i class="fa fa-times"></i></span>
-                                    </li>
-                                <?php
-                                endif;
-                            }
-                            if (isset($filters['keywords'])) :
-                                ?>
-                                <li class="filter-<?php echo $i++ ?> small primary" role="button" tabindex="0" data-t4-filter="keywords"> <?php echo $filters['keywords'] ?><span class="remove"><i class="fa fa-times"></i></span></li>
-                            <?php
-                            endif; ?>
-                        </ul>
+                        <?php
+                        $tagsHTML = '';
+                        foreach ($categoryFilters as $key) {
+                            if (isset($filters[$key]) && is_array($filters[$key])) :
+                                foreach ($filters[$key] as $value) : 
+                                    $tagsHTML .= '<li class="filter-' . $i++ . ' small primary" role="button" tabindex="0" data-t4-value="' . strtolower($value) . '" data-t4-filter="' . $key . '">' . (isset($iconData[$value]) ? $iconData[$value]['label'] : $value) . '<span class="remove"><i class="fa fa-times"></i></span></li>'; 
+                                endforeach;
+                            elseif (isset($filters[$key])) :
+                                $value = $filters[$key];
+                                $tagsHTML .= '<li class="filter-' . $i++ . ' small primary" role="button" tabindex="0" data-t4-value="' . strtolower($value) . '" data-t4-filter="' . $key . '">' . (isset($iconData[$value]) ? $iconData[$value]['label'] : $value) . '<span class="remove"><i class="fa fa-times"></i></span></li>'; 
+                            endif;
+                        }
+                        if (isset($filters['keywords'])) :
+                            $tagsHTML .= '<li class="filter-' . $i++ . ' small primary" role="button" tabindex="0" data-t4-filter="keywords">' . $filters['keywords'] . '<span class="remove"><i class="fa fa-times"></i></span></li>'; 
+                        endif; 
+                        echo $tagsHTML != '' ? '<ul class="no-bullet">' . $tagsHTML . '</ul>' : '';
+                        ?>
                     <?php endif; ?>
                 </div>
               <?php if ($i > 0) : ?>
@@ -197,8 +187,3 @@ $iconData = json_decode('<t4 type="navigation" name="CEJS Search: Return Icon JS
         </div>
     </div>
 </section>
-
-
-
-
-
